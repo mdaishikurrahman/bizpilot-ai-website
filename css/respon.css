@@ -1,0 +1,3139 @@
+/* =========================================================
+   BIZPILOT AI — LANDING PAGE RESPONSIVE
+   respon.css
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .landing-navigation {
+        gap: 18px;
+    }
+
+    .landing-product-preview {
+        margin-top: 50px;
+    }
+
+    .preview-dashboard {
+        grid-template-columns: 155px minmax(0, 1fr);
+    }
+
+    .preview-stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .landing-feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .landing-solution-content {
+        padding: 45px;
+    }
+
+    .landing-solution-content h2 {
+        font-size: 33px;
+    }
+
+    .landing-pricing-card {
+        grid-template-columns: 1fr auto;
+        gap: 25px;
+    }
+
+    .landing-pricing-card .landing-primary-btn {
+        grid-column: 1 / -1;
+        justify-self: start;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .landing-container {
+        width: min(100% - 30px, 560px);
+    }
+
+    .landing-nav {
+        min-height: 68px;
+    }
+
+    .landing-navigation,
+    .landing-nav-actions {
+        display: none;
+    }
+
+    .landing-menu-btn {
+        display: block;
+    }
+
+
+    /* Hero */
+
+    .landing-hero {
+        padding: 65px 0 55px;
+    }
+
+    .landing-hero-title {
+        margin-top: 20px;
+        font-size: 45px;
+        letter-spacing: -2px;
+    }
+
+    .landing-hero-text {
+        font-size: 13px;
+    }
+
+    .landing-hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .landing-primary-btn,
+    .landing-outline-btn {
+        width: 100%;
+    }
+
+    .landing-trust {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+
+    /* Product Preview */
+
+    .landing-product-preview {
+        margin-top: 40px;
+        border-radius: 13px;
+    }
+
+    .preview-browser-address {
+        min-width: 150px;
+    }
+
+    .preview-dashboard {
+        display: block;
+    }
+
+    .preview-sidebar {
+        display: none;
+    }
+
+    .preview-content {
+        padding: 18px;
+    }
+
+    .preview-content-header h3 {
+        font-size: 14px;
+    }
+
+
+    /* Preview Stats */
+
+    .preview-stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
+        margin-top: 18px;
+    }
+
+    .preview-stat-card {
+        padding: 10px;
+    }
+
+    .preview-stat-card strong {
+        font-size: 14px;
+    }
+
+
+    /* Preview Lower */
+
+    .preview-lower-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .preview-chart-card,
+    .preview-ai-card {
+        min-height: 180px;
+    }
+
+    .preview-chart {
+        height: 105px;
+    }
+
+
+    /* Sections */
+
+    .landing-section {
+        padding: 70px 0;
+    }
+
+    .landing-section-heading {
+        margin-bottom: 35px;
+    }
+
+    .landing-section-heading h2 {
+        font-size: 30px;
+    }
+
+    .landing-section-heading p {
+        font-size: 12px;
+    }
+
+
+    /* Features */
+
+    .landing-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-feature-card {
+        min-height: auto;
+    }
+
+
+    /* Steps */
+
+    .landing-steps {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Solution */
+
+    .landing-solution-box {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-solution-content {
+        padding: 35px 25px;
+    }
+
+    .landing-solution-content h2 {
+        font-size: 30px;
+    }
+
+    .landing-solution-visual {
+        min-height: 330px;
+    }
+
+    .landing-solution-orb {
+        width: 125px;
+        height: 125px;
+        font-size: 36px;
+    }
+
+    .landing-floating-card.card-one {
+        top: 35px;
+        left: 20px;
+    }
+
+    .landing-floating-card.card-two {
+        right: 20px;
+        bottom: 35px;
+    }
+
+
+    /* Pricing */
+
+    .landing-pricing-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .landing-pricing-card .landing-primary-btn {
+        grid-column: auto;
+        justify-self: stretch;
+    }
+
+    .landing-price strong {
+        font-size: 31px;
+    }
+
+
+    /* CTA */
+
+    .landing-cta-box {
+        padding: 50px 22px;
+    }
+
+    .landing-cta-box h2 {
+        font-size: 29px;
+    }
+
+
+    /* Footer */
+
+    .landing-footer-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 40px 0;
+    }
+
+    .landing-footer-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .landing-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .landing-hero-title {
+        font-size: 39px;
+    }
+
+    .landing-hero-badge {
+        font-size: 9px;
+    }
+
+    .landing-hero-text {
+        font-size: 12px;
+    }
+
+    .preview-content {
+        padding: 13px;
+    }
+
+    .preview-stat-card span {
+        font-size: 7px;
+    }
+
+    .preview-stat-card strong {
+        font-size: 12px;
+    }
+
+    .preview-stat-card small {
+        font-size: 6px;
+    }
+
+    .landing-footer-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .landing-footer-links div:last-child {
+        grid-column: 1 / -1;
+    }
+
+}
+
+/* =========================================================
+   BIZPILOT AI — DASHBOARD RESPONSIVE
+   Add at the END of respon.css
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .dashboard-sidebar {
+        width: 210px;
+    }
+
+
+    .dashboard-main {
+        width: calc(100% - 210px);
+
+        margin-left: 210px;
+    }
+
+
+    .dashboard-header {
+        padding: 0 25px;
+    }
+
+
+    .dashboard-content {
+        padding: 28px 25px 45px;
+    }
+
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .dashboard-main-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .dashboard-bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ai-insight-card {
+        min-height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .dashboard-sidebar {
+        width: 190px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .dashboard-main {
+        width: calc(100% - 190px);
+
+        margin-left: 190px;
+    }
+
+
+    .dashboard-header {
+        padding: 0 20px;
+    }
+
+
+    .dashboard-content {
+        padding: 25px 20px 40px;
+    }
+
+
+    .dashboard-welcome-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .dashboard-quick-actions {
+        width: 100%;
+    }
+
+
+    .dashboard-quick-actions a {
+        flex: 1;
+    }
+
+
+    .dashboard-action-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .dashboard-layout {
+        display: block;
+    }
+
+
+    /* -----------------------------------------
+       SIDEBAR
+    ----------------------------------------- */
+
+    .dashboard-sidebar {
+        position: fixed;
+
+        top: 0;
+        left: -280px;
+
+        width: 250px;
+
+        height: 100vh;
+
+        padding: 22px 14px;
+
+        box-shadow:
+            10px 0 35px rgba(31, 37, 56, 0.10);
+
+        transition:
+            left 0.25s ease;
+    }
+
+
+    .dashboard-sidebar.mobile-open {
+        left: 0;
+    }
+
+
+    /* -----------------------------------------
+       MAIN
+    ----------------------------------------- */
+
+    .dashboard-main {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+
+    /* -----------------------------------------
+       HEADER
+    ----------------------------------------- */
+
+    .dashboard-header {
+        min-height: 70px;
+
+        padding: 0 15px;
+    }
+
+
+    .header-title h1 {
+        font-size: 17px;
+    }
+
+
+    .header-title p {
+        max-width: 190px;
+
+        font-size: 9px;
+
+        line-height: 1.5;
+    }
+
+
+    .header-actions {
+        gap: 6px;
+    }
+
+
+    .mobile-dashboard-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .header-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+
+    .user-button > span:last-child {
+        display: none;
+    }
+
+
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .dashboard-content {
+        width: 100%;
+
+        padding: 22px 15px 35px;
+    }
+
+
+    .dashboard-welcome-row {
+        gap: 15px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .dashboard-welcome-row h2 {
+        font-size: 19px;
+
+        line-height: 1.25;
+    }
+
+
+    .dashboard-eyebrow {
+        font-size: 7px;
+    }
+
+
+    .dashboard-quick-actions {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        width: 100%;
+    }
+
+
+    .primary-dashboard-btn,
+    .secondary-dashboard-btn {
+        width: 100%;
+
+        min-height: 38px;
+    }
+
+
+    /* -----------------------------------------
+       STATS
+    ----------------------------------------- */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 8px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .stat-box {
+        padding: 13px;
+    }
+
+
+    .stat-top {
+        margin-bottom: 9px;
+    }
+
+
+    .stat-name {
+        font-size: 8px;
+    }
+
+
+    .stat-icon {
+        width: 24px;
+        height: 24px;
+
+        font-size: 10px;
+    }
+
+
+    .stat-value {
+        font-size: 17px;
+    }
+
+
+    .stat-change {
+        margin-top: 5px;
+
+        font-size: 7px;
+    }
+
+
+    /* -----------------------------------------
+       MAIN GRID
+    ----------------------------------------- */
+
+    .dashboard-main-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .dashboard-chart-card,
+    .dashboard-table-card,
+    .expense-summary-card {
+        padding: 15px;
+    }
+
+
+    .dashboard-card-header h3 {
+        font-size: 12px;
+    }
+
+
+    .dashboard-card-header p {
+        font-size: 7px;
+    }
+
+
+    .dashboard-select {
+        min-height: 28px;
+
+        max-width: 105px;
+
+        font-size: 7px;
+    }
+
+
+    /* -----------------------------------------
+       REVENUE CHART
+    ----------------------------------------- */
+
+    .revenue-summary {
+        margin-top: 15px;
+    }
+
+
+    .revenue-summary strong {
+        font-size: 19px;
+    }
+
+
+    .revenue-summary span {
+        font-size: 7px;
+    }
+
+
+    .revenue-chart {
+        height: 190px;
+    }
+
+
+    .chart-y-axis {
+        width: 34px;
+
+        font-size: 6px;
+    }
+
+
+    .chart-bars {
+        gap: 5px;
+    }
+
+
+    .chart-bar {
+        width: 22px;
+    }
+
+
+    .chart-bar-item > span {
+        font-size: 6px;
+    }
+
+
+    /* -----------------------------------------
+       AI INSIGHT
+    ----------------------------------------- */
+
+    .ai-insight-card {
+        padding: 17px;
+    }
+
+
+    .ai-insight-card h3 {
+        margin-top: 18px;
+
+        font-size: 15px;
+    }
+
+
+    .ai-insight-card p {
+        font-size: 8px;
+
+        line-height: 1.7;
+    }
+
+
+    .ai-insight-metric {
+        margin-top: 19px;
+    }
+
+
+    .ai-insight-metric strong {
+        font-size: 19px;
+    }
+
+
+    /* -----------------------------------------
+       BOTTOM GRID
+    ----------------------------------------- */
+
+    .dashboard-bottom-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* -----------------------------------------
+       TABLE
+    ----------------------------------------- */
+
+    .table-wrapper {
+        margin-top: 13px;
+
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .invoice-table {
+        min-width: 520px;
+    }
+
+
+    .invoice-table th {
+        padding: 8px 7px;
+
+        font-size: 6px;
+    }
+
+
+    .invoice-table td {
+        padding: 10px 7px;
+
+        font-size: 7px;
+    }
+
+
+    .invoice-table td strong {
+        font-size: 7px;
+    }
+
+
+    .status {
+        padding: 3px 6px;
+
+        font-size: 6px;
+    }
+
+
+    /* -----------------------------------------
+       EXPENSE SUMMARY
+    ----------------------------------------- */
+
+    .expense-total {
+        margin-top: 18px;
+    }
+
+
+    .expense-total strong {
+        font-size: 22px;
+    }
+
+
+    .expense-progress {
+        margin-top: 19px;
+    }
+
+
+    .expense-progress-row {
+        margin-bottom: 13px;
+    }
+
+
+    /* -----------------------------------------
+       ACTION CARDS
+    ----------------------------------------- */
+
+    .dashboard-action-grid {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+
+    .dashboard-action-card {
+        padding: 13px;
+    }
+
+
+    .dashboard-action-icon {
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+    }
+
+
+    .dashboard-action-card strong {
+        font-size: 9px;
+    }
+
+
+    .dashboard-action-card div span {
+        font-size: 7px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .dashboard-header {
+        padding: 0 12px;
+    }
+
+
+    .dashboard-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    .header-title h1 {
+        font-size: 15px;
+    }
+
+
+    .header-title p {
+        display: none;
+    }
+
+
+    .stats-grid {
+        gap: 7px;
+    }
+
+
+    .stat-box {
+        padding: 11px;
+    }
+
+
+    .stat-value {
+        font-size: 15px;
+    }
+
+
+    .stat-change {
+        font-size: 6px;
+    }
+
+
+    .dashboard-welcome-row h2 {
+        font-size: 17px;
+    }
+
+
+    .dashboard-quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+
+    .dashboard-card-header {
+        gap: 8px;
+    }
+
+
+    .dashboard-card-header h3 {
+        font-size: 11px;
+    }
+
+
+    .dashboard-card-header p {
+        font-size: 6px;
+    }
+
+
+    .dashboard-select {
+        max-width: 90px;
+
+        padding: 0 5px;
+
+        font-size: 6px;
+    }
+
+
+    .revenue-chart {
+        height: 165px;
+    }
+
+
+    .chart-bar {
+        width: 17px;
+    }
+
+
+    .chart-bars {
+        gap: 2px;
+    }
+
+
+    .chart-y-axis {
+        width: 29px;
+    }
+
+
+    .ai-insight-card h3 {
+        font-size: 14px;
+    }
+
+
+    .ai-insight-card p {
+        font-size: 7px;
+    }
+
+
+    .expense-total strong {
+        font-size: 20px;
+    }
+
+
+    .dashboard-action-card {
+        gap: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREEN
+========================================================= */
+
+@media (max-width: 340px) {
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .header-icon {
+        display: none;
+    }
+
+
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .dashboard-welcome-row h2 {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   INVOICES RESPONSIVE
+   Add at the END of respon.css
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .invoice-table-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .invoice-controls {
+        width: 100%;
+    }
+
+    .invoice-search {
+        flex: 1;
+        width: auto;
+    }
+
+    .invoice-filter {
+        min-width: 130px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .invoice-page-heading {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .invoice-page-heading h2 {
+        font-size: 19px;
+    }
+
+    .invoice-page-heading p {
+        font-size: 8px;
+    }
+
+    .invoice-page-heading .primary-dashboard-btn {
+        width: 100%;
+    }
+
+    .invoice-table-header {
+        padding: 15px;
+    }
+
+    .invoice-table-header h3 {
+        font-size: 12px;
+    }
+
+    .invoice-table-header p {
+        font-size: 7px;
+    }
+
+    .invoice-controls {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .invoice-search {
+        width: 100%;
+        height: 36px;
+    }
+
+    .invoice-filter {
+        width: 100%;
+        height: 36px;
+    }
+
+    .invoice-management-card .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .invoice-management-card .invoice-table {
+        min-width: 760px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .invoice-page-heading h2 {
+        font-size: 17px;
+    }
+
+    .invoice-table-header {
+        padding: 13px;
+    }
+
+    .invoice-management-card .invoice-table th {
+        padding: 9px;
+    }
+
+    .invoice-management-card .invoice-table td {
+        padding: 11px 9px;
+    }
+
+}
+/* =========================================================
+   EXPENSES — RESPONSIVE CSS
+   Add at the END of css/respon.css
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .expense-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .expense-management-card {
+        width: 100%;
+    }
+
+    .expense-management-card .invoice-table-header {
+        gap: 15px;
+    }
+
+    .expense-management-card .invoice-controls {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .expense-management-card .invoice-table-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .expense-management-card .invoice-controls {
+        width: 100%;
+    }
+
+    .expense-management-card .invoice-search {
+        flex: 1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Expense stats */
+
+    .expense-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+
+    .expense-management-card {
+        border-radius: 10px;
+    }
+
+
+    /* Table header */
+
+    .expense-management-card .invoice-table-header {
+        display: flex;
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+        gap: 14px;
+
+        padding: 15px;
+    }
+
+
+    .expense-management-card .invoice-table-header h3 {
+        font-size: 12px;
+    }
+
+
+    .expense-management-card .invoice-table-header p {
+        font-size: 7px;
+    }
+
+
+    /* Controls */
+
+    .expense-management-card .invoice-controls {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 8px;
+
+        width: 100%;
+    }
+
+
+    .expense-management-card .invoice-search {
+        display: flex;
+
+        width: 100%;
+
+        height: 36px;
+
+        flex: none;
+
+        box-sizing: border-box;
+    }
+
+
+    .expense-management-card .invoice-search input {
+        min-width: 0;
+
+        font-size: 8px;
+    }
+
+
+    .expense-management-card .invoice-filter {
+        width: 100%;
+
+        height: 36px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Horizontal table scroll */
+
+    .expense-management-card .table-wrapper {
+        width: 100%;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .expense-management-card .all-expense-table {
+        min-width: 820px;
+
+        margin: 0;
+    }
+
+
+    .expense-management-card .all-expense-table th {
+        padding: 10px 9px;
+
+        font-size: 6px;
+    }
+
+
+    .expense-management-card .all-expense-table td {
+        padding: 12px 9px;
+
+        font-size: 7px;
+    }
+
+
+    .expense-management-card .all-expense-table td strong {
+        font-size: 7px;
+    }
+
+
+    .expense-management-card .status {
+        padding: 4px 6px;
+
+        font-size: 6px;
+    }
+
+
+    /* Empty state */
+
+    #expenseEmptyState {
+        min-height: 200px;
+
+        padding: 25px 15px;
+    }
+
+
+    #expenseEmptyState h3 {
+        font-size: 13px;
+    }
+
+
+    #expenseEmptyState p {
+        font-size: 7px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .expense-stats-grid {
+        gap: 7px;
+    }
+
+
+    .expense-stats-grid .stat-box {
+        padding: 11px;
+    }
+
+
+    .expense-stats-grid .stat-name {
+        font-size: 7px;
+    }
+
+
+    .expense-stats-grid .stat-value {
+        font-size: 15px;
+    }
+
+
+    .expense-stats-grid .stat-change {
+        font-size: 6px;
+
+        line-height: 1.4;
+    }
+
+
+    .expense-management-card .invoice-table-header {
+        padding: 13px;
+    }
+
+
+    .expense-management-card .invoice-table-header h3 {
+        font-size: 11px;
+    }
+
+
+    .expense-management-card .invoice-table-header p {
+        font-size: 6px;
+    }
+
+
+    .expense-management-card .invoice-search,
+    .expense-management-card .invoice-filter {
+        height: 34px;
+    }
+
+
+    .expense-management-card .all-expense-table {
+        min-width: 780px;
+    }
+
+
+    .expense-management-card .all-expense-table th {
+        padding: 9px 8px;
+    }
+
+
+    .expense-management-card .all-expense-table td {
+        padding: 10px 8px;
+    }
+
+
+    .expense-action-btn {
+        width: 26px;
+        height: 26px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 340px) {
+
+    .expense-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .expense-stats-grid .stat-value {
+        font-size: 18px;
+    }
+
+
+    .expense-management-card .all-expense-table {
+        min-width: 760px;
+    }
+
+}
+
+/* =========================================================
+   CUSTOMERS — RESPONSIVE CSS
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .customer-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .customer-management-card {
+        width: 100%;
+    }
+
+    .customer-management-card .invoice-table-header {
+        gap: 15px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .customer-management-card .invoice-table-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .customer-management-card .invoice-controls {
+        width: 100%;
+    }
+
+    .customer-management-card .invoice-search {
+        flex: 1;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .customer-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+
+    .customer-management-card {
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    /* Header */
+
+    .customer-management-card .invoice-table-header {
+        display: flex;
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+        gap: 14px;
+
+        padding: 15px;
+    }
+
+
+    .customer-management-card .invoice-table-header h3 {
+        font-size: 12px;
+    }
+
+
+    .customer-management-card .invoice-table-header p {
+        font-size: 7px;
+    }
+
+
+    /* Controls */
+
+    .customer-management-card .invoice-controls {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 8px;
+
+        width: 100%;
+    }
+
+
+    .customer-management-card .invoice-search {
+        width: 100%;
+        height: 36px;
+
+        flex: none;
+
+        box-sizing: border-box;
+    }
+
+
+    .customer-management-card .invoice-filter {
+        width: 100%;
+        height: 36px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Table */
+
+    .customer-management-card .table-wrapper {
+        width: 100%;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .customer-table {
+        min-width: 850px;
+    }
+
+
+    .customer-table th {
+        padding: 10px 9px;
+        font-size: 6px;
+    }
+
+
+    .customer-table td {
+        padding: 11px 9px;
+        font-size: 7px;
+    }
+
+
+    .customer-table .customer-name-cell strong {
+        font-size: 7px;
+    }
+
+
+    /* Avatar */
+
+    .customer-avatar {
+        width: 28px;
+        height: 28px;
+
+        font-size: 7px;
+    }
+
+
+    /* Status */
+
+    .customer-management-card .status {
+        padding: 4px 6px;
+
+        font-size: 6px;
+    }
+
+
+    /* Empty */
+
+    #customerEmptyState {
+        min-height: 200px;
+
+        padding: 25px 15px;
+    }
+
+
+    #customerEmptyState h3 {
+        font-size: 13px;
+    }
+
+
+    #customerEmptyState p {
+        font-size: 7px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .customer-stats-grid {
+        gap: 7px;
+    }
+
+
+    .customer-stats-grid .stat-box {
+        padding: 11px;
+    }
+
+
+    .customer-stats-grid .stat-name {
+        font-size: 7px;
+    }
+
+
+    .customer-stats-grid .stat-value {
+        font-size: 15px;
+    }
+
+
+    .customer-stats-grid .stat-change {
+        font-size: 6px;
+
+        line-height: 1.4;
+    }
+
+
+    .customer-management-card .invoice-table-header {
+        padding: 13px;
+    }
+
+
+    .customer-management-card .invoice-table-header h3 {
+        font-size: 11px;
+    }
+
+
+    .customer-management-card .invoice-table-header p {
+        font-size: 6px;
+    }
+
+
+    .customer-management-card .invoice-search,
+    .customer-management-card .invoice-filter {
+        height: 34px;
+    }
+
+
+    .customer-table {
+        min-width: 820px;
+    }
+
+
+    .customer-table th {
+        padding: 9px 8px;
+    }
+
+
+    .customer-table td {
+        padding: 10px 8px;
+    }
+
+
+    .customer-action-btn {
+        width: 26px;
+        height: 26px;
+
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 340px) {
+
+    .customer-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .customer-stats-grid .stat-value {
+        font-size: 18px;
+    }
+
+}
+
+/* =========================================================
+   ANALYTICS — RESPONSIVE CSS
+   Add at the END of css/respon.css
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .analytics-main-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .analytics-lower-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .analytics-ai-card {
+        grid-column: 1 / -1;
+    }
+
+
+    .analytics-chart-card {
+        min-height: 330px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .analytics-lower-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .analytics-ai-card {
+        grid-column: 1 / -1;
+    }
+
+
+    .analytics-period-control {
+        width: 100%;
+    }
+
+
+    .analytics-period-control .invoice-filter {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =====================================================
+       PAGE HEADING
+    ===================================================== */
+
+    .analytics-period-control {
+        width: 100%;
+    }
+
+
+    .analytics-period-control .invoice-filter {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       STATS
+    ===================================================== */
+
+    .analytics-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 8px;
+    }
+
+
+    .analytics-stats-grid .stat-box {
+        min-width: 0;
+    }
+
+
+    .analytics-stats-grid .stat-name {
+        font-size: 7px;
+    }
+
+
+    .analytics-stats-grid .stat-value {
+        font-size: 15px;
+    }
+
+
+    .analytics-stats-grid .stat-change {
+        font-size: 6px;
+
+        line-height: 1.4;
+    }
+
+
+    /* =====================================================
+       MAIN GRID
+    ===================================================== */
+
+    .analytics-main-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    /* =====================================================
+       REVENUE CHART
+    ===================================================== */
+
+    .analytics-chart-card {
+        padding: 14px;
+
+        min-height: 0;
+    }
+
+
+    .analytics-card-header {
+        margin-bottom: 15px;
+    }
+
+
+    .analytics-card-header h3 {
+        font-size: 11px;
+    }
+
+
+    .analytics-card-header p {
+        font-size: 6px;
+    }
+
+
+    .analytics-chart-value {
+        font-size: 13px;
+    }
+
+
+    .analytics-chart {
+        min-height: 220px;
+    }
+
+
+    .chart-y-axis {
+        width: 32px;
+
+        padding-right: 6px;
+
+        font-size: 5px;
+    }
+
+
+    .chart-area {
+        height: 205px;
+    }
+
+
+    .chart-x-axis {
+        font-size: 5px;
+    }
+
+
+    .chart-line {
+        stroke-width: 2.5;
+    }
+
+
+    /* SVG point size is controlled by the circle r attribute in HTML. */
+    .chart-point {
+        stroke-width: 2;
+    }
+
+
+    /* =====================================================
+       EXPENSE BREAKDOWN
+    ===================================================== */
+
+    .analytics-breakdown-card {
+        padding: 14px;
+    }
+
+
+    .expense-donut-wrapper {
+        padding-top: 0;
+
+        padding-bottom: 15px;
+    }
+
+
+    .expense-donut {
+        width: 125px;
+        height: 125px;
+    }
+
+
+    .expense-donut::after {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .expense-donut-center strong {
+        font-size: 14px;
+    }
+
+
+    .expense-donut-center span {
+        font-size: 6px;
+    }
+
+
+    .expense-legend {
+        gap: 8px;
+    }
+
+
+    .expense-legend > div {
+        font-size: 6px;
+    }
+
+
+    .expense-legend strong {
+        font-size: 7px;
+    }
+
+
+    /* =====================================================
+       LOWER GRID
+    ===================================================== */
+
+    .analytics-lower-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    .analytics-small-card {
+        padding: 14px;
+    }
+
+
+    .analytics-ai-card {
+        grid-column: auto;
+
+        padding: 18px;
+    }
+
+
+    /* =====================================================
+       MINI BAR CHART
+    ===================================================== */
+
+    .mini-bar-chart {
+        height: 125px;
+
+        gap: 6px;
+    }
+
+
+    .mini-bar-chart div {
+        max-width: 22px;
+
+        border-radius: 4px 4px 0 0;
+    }
+
+
+    .mini-chart-labels {
+        font-size: 5px;
+    }
+
+
+    /* =====================================================
+       TOP CUSTOMERS
+    ===================================================== */
+
+    .top-customer-item {
+        padding: 8px 0;
+    }
+
+
+    .top-customer-item div strong {
+        font-size: 7px;
+    }
+
+
+    .top-customer-item div small {
+        font-size: 5px;
+    }
+
+
+    .top-customer-item > strong {
+        font-size: 7px;
+    }
+
+
+    /* =====================================================
+       AI CARD
+    ===================================================== */
+
+    .analytics-ai-icon {
+        width: 32px;
+        height: 32px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .analytics-ai-card h3 {
+        font-size: 12px;
+    }
+
+
+    .analytics-ai-card p {
+        font-size: 7px;
+
+        line-height: 1.6;
+    }
+
+
+    .analytics-ai-card a {
+        font-size: 7px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .analytics-stats-grid {
+        gap: 7px;
+    }
+
+
+    .analytics-stats-grid .stat-box {
+        padding: 11px;
+    }
+
+
+    .analytics-stats-grid .stat-name {
+        font-size: 6px;
+    }
+
+
+    .analytics-stats-grid .stat-value {
+        font-size: 14px;
+    }
+
+
+    .analytics-stats-grid .stat-change {
+        font-size: 5.5px;
+    }
+
+
+    .analytics-chart-card,
+    .analytics-breakdown-card,
+    .analytics-small-card {
+        padding: 12px;
+    }
+
+
+    .analytics-card-header h3 {
+        font-size: 10px;
+    }
+
+
+    .analytics-card-header p {
+        font-size: 5.5px;
+    }
+
+
+    .analytics-chart-value {
+        font-size: 11px;
+    }
+
+
+    .analytics-chart {
+        min-height: 190px;
+    }
+
+
+    .chart-area {
+        height: 175px;
+    }
+
+
+    .chart-y-axis {
+        width: 27px;
+
+        font-size: 4.5px;
+    }
+
+
+    .chart-x-axis {
+        font-size: 4.5px;
+    }
+
+
+    .expense-donut {
+        width: 110px;
+        height: 110px;
+    }
+
+
+    .expense-donut::after {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .expense-donut-center strong {
+        font-size: 12px;
+    }
+
+
+    .expense-donut-center span {
+        font-size: 5px;
+    }
+
+
+    .mini-bar-chart {
+        height: 110px;
+    }
+
+
+    .analytics-ai-card {
+        padding: 15px;
+    }
+
+
+    .analytics-ai-card h3 {
+        font-size: 11px;
+    }
+
+
+    .analytics-ai-card p {
+        font-size: 6px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 340px) {
+
+    .analytics-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .analytics-stats-grid .stat-value {
+        font-size: 17px;
+    }
+
+
+    .analytics-chart {
+        min-height: 175px;
+    }
+
+
+    .chart-area {
+        height: 160px;
+    }
+
+
+    .expense-donut {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .expense-donut::after {
+        width: 64px;
+        height: 64px;
+    }
+
+}
+
+
+/* =========================================================
+   AI ASSISTANT — RESPONSIVE
+   Add at the END of css/respon.css
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .ai-assistant-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ai-insights-column {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        align-items: start;
+    }
+
+
+    .ai-status-card {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .ai-assistant-layout {
+        gap: 12px;
+    }
+
+
+    .ai-insights-column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .ai-chat-card {
+        min-height: 580px;
+    }
+
+
+    .ai-chat-messages {
+        padding: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =====================================================
+       PAGE HEADING
+    ===================================================== */
+
+    .ai-page-heading {
+        margin-bottom: 15px;
+    }
+
+
+    .ai-page-badge {
+        font-size: 5px;
+
+        padding: 4px 7px;
+    }
+
+
+    .ai-page-heading h2 {
+        font-size: 20px;
+
+        letter-spacing: -.4px;
+    }
+
+
+    .ai-page-heading p {
+        font-size: 7px;
+
+        line-height: 1.6;
+    }
+
+
+    /* =====================================================
+       MAIN LAYOUT
+    ===================================================== */
+
+    .ai-assistant-layout {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    /* =====================================================
+       CHAT
+    ===================================================== */
+
+    .ai-chat-card {
+        min-height: 540px;
+
+        border-radius: 10px;
+    }
+
+
+    .ai-chat-header {
+        padding: 12px;
+    }
+
+
+    .ai-agent-avatar {
+        width: 30px;
+        height: 30px;
+
+        border-radius: 8px;
+
+        font-size: 13px;
+    }
+
+
+    .ai-agent-info strong {
+        font-size: 8px;
+    }
+
+
+    .ai-agent-info span {
+        font-size: 5px;
+    }
+
+
+    .ai-new-chat-btn {
+        padding: 6px 8px;
+
+        font-size: 6px;
+    }
+
+
+    /* =====================================================
+       MESSAGES
+    ===================================================== */
+
+    .ai-chat-messages {
+        padding: 15px;
+    }
+
+
+    .ai-message {
+        max-width: 94%;
+
+        gap: 7px;
+    }
+
+
+    .ai-message-avatar {
+        width: 25px;
+        height: 25px;
+
+        border-radius: 7px;
+
+        font-size: 10px;
+    }
+
+
+    .ai-message-name {
+        font-size: 5px;
+    }
+
+
+    .ai-message-bubble {
+        padding: 10px 11px;
+    }
+
+
+    .ai-message-bubble p {
+        font-size: 7px;
+
+        line-height: 1.65;
+    }
+
+
+    .ai-message.user .ai-message-content {
+        max-width: 85%;
+    }
+
+
+    /* =====================================================
+       QUICK PROMPTS
+    ===================================================== */
+
+    .ai-quick-prompts {
+        margin-left: 32px;
+
+        margin-top: 14px;
+
+        gap: 5px;
+    }
+
+
+    .ai-prompt-btn {
+        padding: 7px 8px;
+
+        font-size: 5.5px;
+
+        border-radius: 7px;
+    }
+
+
+    /* =====================================================
+       INPUT
+    ===================================================== */
+
+    .ai-chat-input-area {
+        padding: 10px 12px 12px;
+    }
+
+
+    .ai-chat-input-wrapper {
+        padding-left: 9px;
+
+        border-radius: 8px;
+    }
+
+
+    .ai-chat-input-wrapper input {
+        font-size: 7px;
+    }
+
+
+    .ai-send-btn {
+        width: 27px;
+        height: 27px;
+
+        border-radius: 7px;
+
+        font-size: 12px;
+    }
+
+
+    .ai-input-hint {
+        font-size: 5px;
+
+        line-height: 1.4;
+    }
+
+
+    /* =====================================================
+       INSIGHTS
+    ===================================================== */
+
+    .ai-insights-column {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+    }
+
+
+    .ai-snapshot-card,
+    .ai-suggestions-card {
+        padding: 13px;
+    }
+
+
+    .ai-side-heading {
+        margin-bottom: 10px;
+    }
+
+
+    .ai-side-heading h3 {
+        font-size: 9px;
+    }
+
+
+    .ai-side-heading p {
+        font-size: 5px;
+    }
+
+
+    .ai-snapshot-item {
+        padding: 8px 0;
+    }
+
+
+    .ai-snapshot-item span {
+        font-size: 6px;
+    }
+
+
+    .ai-snapshot-item strong {
+        font-size: 7px;
+    }
+
+
+    .ai-suggestion-item {
+        grid-template-columns: 25px minmax(0, 1fr) 9px;
+
+        padding: 8px 0;
+
+        gap: 7px;
+    }
+
+
+    .ai-suggestion-icon {
+        width: 25px;
+        height: 25px;
+
+        border-radius: 7px;
+
+        font-size: 7px;
+    }
+
+
+    .ai-suggestion-item strong {
+        font-size: 6.5px;
+    }
+
+
+    .ai-suggestion-item small {
+        font-size: 5px;
+    }
+
+
+    .ai-suggestion-item > span:last-child {
+        font-size: 8px;
+    }
+
+
+    .ai-status-card {
+        grid-column: auto;
+
+        padding: 11px;
+    }
+
+
+    .ai-status-icon {
+        width: 25px;
+        height: 25px;
+
+        font-size: 9px;
+    }
+
+
+    .ai-status-card strong {
+        font-size: 6.5px;
+    }
+
+
+    .ai-status-card p {
+        font-size: 5px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .ai-page-heading h2 {
+        font-size: 18px;
+    }
+
+
+    .ai-page-heading p {
+        font-size: 6px;
+    }
+
+
+    .ai-chat-card {
+        min-height: 500px;
+    }
+
+
+    .ai-chat-header {
+        padding: 10px;
+    }
+
+
+    .ai-agent-avatar {
+        width: 27px;
+        height: 27px;
+
+        font-size: 11px;
+    }
+
+
+    .ai-agent-info strong {
+        font-size: 7px;
+    }
+
+
+    .ai-agent-info span {
+        font-size: 4.5px;
+    }
+
+
+    .ai-new-chat-btn {
+        padding: 5px 7px;
+
+        font-size: 5.5px;
+    }
+
+
+    .ai-chat-messages {
+        padding: 12px;
+    }
+
+
+    .ai-message {
+        max-width: 97%;
+    }
+
+
+    .ai-message-avatar {
+        width: 22px;
+        height: 22px;
+
+        font-size: 9px;
+    }
+
+
+    .ai-message-bubble {
+        padding: 9px 10px;
+    }
+
+
+    .ai-message-bubble p {
+        font-size: 6.5px;
+
+        line-height: 1.6;
+    }
+
+
+    .ai-quick-prompts {
+        margin-left: 29px;
+    }
+
+
+    .ai-prompt-btn {
+        width: 100%;
+
+        text-align: left;
+
+        font-size: 5.5px;
+    }
+
+
+    .ai-chat-input-area {
+        padding: 8px 9px 10px;
+    }
+
+
+    .ai-chat-input-wrapper input {
+        font-size: 6.5px;
+    }
+
+
+    .ai-send-btn {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .ai-input-hint {
+        font-size: 4.5px;
+    }
+
+
+    .ai-snapshot-item span {
+        font-size: 5.5px;
+    }
+
+
+    .ai-snapshot-item strong {
+        font-size: 6.5px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 340px) {
+
+    .ai-page-heading h2 {
+        font-size: 16px;
+    }
+
+
+    .ai-chat-card {
+        min-height: 470px;
+    }
+
+
+    .ai-agent-info span {
+        display: none;
+    }
+
+
+    .ai-message-bubble p {
+        font-size: 6px;
+    }
+
+
+    .ai-prompt-btn {
+        font-size: 5px;
+    }
+
+
+    .ai-status-card {
+        padding: 9px;
+    }
+
+}
+
+/* =========================================================
+   PREMIUM UPGRADE — TESTIMONIALS RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+    .landing-testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .landing-trust-badge {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 16px;
+    }
+}
+
+
+/* =========================================================
+   PREMIUM TYPOGRAPHY — RESPONSIVE FIX
+========================================================= */
+
+@media (max-width: 700px) {
+    body { font-size: 15px; }
+
+    .landing-hero-text { font-size: 15px; }
+    .landing-section-heading p { font-size: 14px; }
+    .landing-feature-card p,
+    .landing-step p,
+    .landing-solution-content p,
+    .landing-pricing-info p,
+    .landing-cta-box p { font-size: 14px; }
+
+    .dashboard-header .header-title p,
+    .dashboard-content p,
+    .invoice-page-heading p,
+    .customer-page-heading p,
+    .analytics-page-heading p,
+    .ai-page-heading p { font-size: 13px; }
+
+    .dashboard-nav a { font-size: 14px; }
+    .stat-name { font-size: 12px; }
+    .stat-value { font-size: 24px; }
+    .stat-change { font-size: 11px; }
+
+    .invoice-table th { font-size: 11px; }
+    .invoice-table td { font-size: 12px; }
+
+    .ai-message-bubble p { font-size: 12px; }
+    .ai-prompt-btn { font-size: 11px; }
+}
+
+@media (max-width: 420px) {
+    .landing-hero-text { font-size: 14px; }
+    .landing-section-heading p,
+    .landing-feature-card p,
+    .landing-step p { font-size: 13px; }
+
+    .ai-message-bubble p { font-size: 11.5px; }
+    .dashboard-header .header-title p,
+    .dashboard-content p { font-size: 12px; }
+}
+
+
+/* =========================================================
+   GLOBAL PREMIUM FONT SIZE OVERRIDE
+   Final cascade: fixes undersized typography on every page
+========================================================= */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-size: 16px;
+}
+
+/* General text */
+p, li, td, label, input, select, textarea {
+    font-size: 15px;
+}
+
+/* Dashboard and all management pages */
+.dashboard-main p,
+.dashboard-content p,
+.dash-card p,
+.invoice-table td,
+.customer-table td,
+.analytics-card p,
+.ai-page-heading p,
+.invoice-page-heading p,
+.customer-page-heading p,
+.analytics-page-heading p {
+    font-size: 15px !important;
+}
+
+.dashboard-nav a,
+.dashboard-nav span:not(.nav-icon):not(.ai-label),
+.sidebar-bottom a,
+.invoice-controls input,
+.invoice-filter,
+.primary-dashboard-btn {
+    font-size: 15px !important;
+}
+
+.sidebar-label,
+.workspace-card small {
+    font-size: 11px !important;
+}
+
+.workspace-card strong {
+    font-size: 15px !important;
+}
+
+.stat-name {
+    font-size: 14px !important;
+}
+
+.stat-value {
+    font-size: 28px !important;
+}
+
+.stat-change {
+    font-size: 13px !important;
+}
+
+.invoice-table th,
+.customer-table th,
+.analytics-table th {
+    font-size: 13px !important;
+}
+
+.invoice-table td,
+.customer-table td,
+.analytics-table td {
+    font-size: 14px !important;
+}
+
+.status,
+.badge {
+    font-size: 12px !important;
+}
+
+/* Headings */
+h1 {
+    font-size: clamp(30px, 4vw, 42px) !important;
+}
+
+.dashboard-content h2,
+.invoice-page-heading h2,
+.customer-page-heading h2,
+.analytics-page-heading h2,
+.ai-page-heading h2 {
+    font-size: clamp(26px, 3vw, 34px) !important;
+}
+
+.dash-card h3,
+.invoice-table-header h3,
+.customer-table-header h3,
+.analytics-card h3,
+.ai-side-heading h3 {
+    font-size: 19px !important;
+}
+
+/* Landing page */
+.landing-navigation a,
+.landing-login-btn,
+.landing-start-btn,
+.landing-primary-btn,
+.landing-outline-btn {
+    font-size: 15px !important;
+}
+
+.landing-hero-text {
+    font-size: 18px !important;
+}
+
+.landing-trust {
+    font-size: 14px !important;
+}
+
+.landing-section-heading p,
+.landing-feature-card p,
+.landing-step p,
+.landing-solution-content p,
+.landing-pricing-info p,
+.landing-cta-box p,
+.landing-footer-brand p {
+    font-size: 16px !important;
+}
+
+.landing-feature-card h3,
+.landing-step h3 {
+    font-size: 21px !important;
+}
+
+.landing-feature-card a,
+.landing-footer-links a,
+.landing-footer-bottom {
+    font-size: 14px !important;
+}
+
+/* AI Assistant */
+.ai-agent-info strong {
+    font-size: 15px !important;
+}
+
+.ai-agent-info span,
+.ai-message-name {
+    font-size: 12px !important;
+}
+
+.ai-message-bubble p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+}
+
+.ai-prompt-btn {
+    font-size: 13px !important;
+}
+
+.ai-snapshot-item span,
+.ai-suggestion-item small,
+.ai-status-card p {
+    font-size: 13px !important;
+}
+
+.ai-snapshot-item strong,
+.ai-suggestion-item strong,
+.ai-status-card strong {
+    font-size: 14px !important;
+}
+
+/* Mobile: readable, without oversized layout */
+@media (max-width: 700px) {
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 15px !important;
+    }
+
+    p, li, td, label {
+        font-size: 14px !important;
+    }
+
+    .landing-hero-text {
+        font-size: 16px !important;
+    }
+
+    .landing-section-heading p,
+    .landing-feature-card p,
+    .landing-step p,
+    .landing-solution-content p,
+    .landing-pricing-info p,
+    .landing-cta-box p {
+        font-size: 14px !important;
+    }
+
+    .dashboard-main p,
+    .dashboard-content p,
+    .invoice-page-heading p,
+    .customer-page-heading p,
+    .analytics-page-heading p,
+    .ai-page-heading p {
+        font-size: 14px !important;
+    }
+
+    .dashboard-nav a {
+        font-size: 14px !important;
+    }
+
+    .stat-value {
+        font-size: 25px !important;
+    }
+
+    .invoice-table th,
+    .customer-table th {
+        font-size: 12px !important;
+    }
+
+    .invoice-table td,
+    .customer-table td {
+        font-size: 13px !important;
+    }
+
+    .ai-message-bubble p {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .landing-hero-text {
+        font-size: 15px !important;
+    }
+
+    .landing-section-heading p,
+    .landing-feature-card p,
+    .landing-step p {
+        font-size: 13px !important;
+    }
+
+    .ai-message-bubble p {
+        font-size: 13px !important;
+    }
+
+    .stat-value {
+        font-size: 23px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE LANDING NAVBAR — FINAL FIX
+========================================================= */
+@media (max-width: 700px) {
+    .landing-nav {
+        position: relative;
+    }
+
+    .landing-navigation.mobile-open,
+    .landing-navigation.mobile-active {
+        display: flex !important;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin: 0;
+        padding: 10px;
+        border: 1px solid var(--landing-border);
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 15px 35px rgba(31, 37, 56, 0.15);
+    }
+
+    .landing-navigation.mobile-open a,
+    .landing-navigation.mobile-active a {
+        display: block;
+        padding: 13px 14px;
+        border-radius: 8px;
+    }
+
+    .landing-navigation.mobile-open a:hover,
+    .landing-navigation.mobile-active a:hover {
+        background: #f5f4ff;
+    }
+
+    .landing-nav-actions.mobile-open {
+        display: flex !important;
+        position: absolute;
+        top: 310px;
+        left: 10px;
+        right: 10px;
+        z-index: 9998;
+        padding: 10px;
+        border: 1px solid var(--landing-border);
+        border-radius: 12px;
+        background: #ffffff;
+    }
+}
