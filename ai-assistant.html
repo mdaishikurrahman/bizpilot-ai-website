@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="BizPilot AI intelligent business assistant"
+    >
+
+    <title>AI Assistant — BizPilot AI</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/respon.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-page">
+
+    <div class="dashboard-bg"></div>
+
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar"
+        >
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+            >
+
+                <span class="dashboard-logo-icon">
+                    ✦
+                </span>
+
+                <span class="dashboard-logo-text">
+                    BizPilot<span>AI</span>
+                </span>
+
+            </a>
+
+
+            <!-- WORKSPACE -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    WORKSPACE
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+                    <a href="dashboard.html">
+
+                        <span class="nav-icon">⌂</span>
+
+                        <span>Overview</span>
+
+                    </a>
+
+
+                    <a href="invoices.html">
+
+                        <span class="nav-icon">▣</span>
+
+                        <span>Invoices</span>
+
+                    </a>
+
+
+                    <a href="expenses.html">
+
+                        <span class="nav-icon">⌁</span>
+
+                        <span>Expenses</span>
+
+                    </a>
+
+
+                    <a href="customers.html">
+
+                        <span class="nav-icon">◎</span>
+
+                        <span>Customers</span>
+
+                    </a>
+
+
+                    <a href="analytics.html">
+
+                        <span class="nav-icon">◫</span>
+
+                        <span>Analytics</span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- AI & AUTOMATION -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    AI & AUTOMATION
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+                    <a
+                        href="ai-assistant.html"
+                        class="active"
+                    >
+
+                        <span class="nav-icon">✦</span>
+
+                        <span>AI Assistant</span>
+
+                        <span class="ai-label">
+                            AI
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">↯</span>
+
+                        <span>Automations</span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">▤</span>
+
+                        <span>Reports</span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="sidebar-bottom">
+
+                <nav class="dashboard-nav">
+
+                    <a href="#">
+
+                        <span class="nav-icon">⚙</span>
+
+                        <span>Settings</span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">?</span>
+
+                        <span>Help Center</span>
+
+                    </a>
+
+                </nav>
+
+
+                <div class="workspace-card">
+
+                    <small>
+                        WORKSPACE
+                    </small>
+
+                    <strong>
+                        My Business
+                    </strong>
+
+                    <span class="workspace-plan">
+                        ✦ Pro workspace
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div class="header-title">
+
+                    <h1>
+                        AI Assistant
+                    </h1>
+
+                    <p>
+                        Your intelligent business co-pilot
+                    </p>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <button
+                        type="button"
+                        class="mobile-dashboard-menu"
+                        id="dashboardMenuBtn"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="header-icon"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+                        ♧
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="user-button"
+                    >
+
+                        <span class="user-avatar">
+                            AR
+                        </span>
+
+                        <span>
+                            Ashikur
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+
+            <section class="dashboard-content ai-assistant-page">
+
+
+                <!-- PAGE INTRO -->
+
+                <div class="ai-page-heading">
+
+                    <div>
+
+                        <span class="ai-page-badge">
+                            ✦ POWERED BY AI
+                        </span>
+
+                        <h2>
+                            How can I help your business?
+                        </h2>
+
+                        <p>
+                            Ask me about your finances, invoices, expenses, customers, or business performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     AI CHAT LAYOUT
+                ================================================== -->
+
+                <div class="ai-assistant-layout">
+
+
+                    <!-- CHAT -->
+
+                    <div class="dash-card ai-chat-card">
+
+
+                        <!-- CHAT HEADER -->
+
+                        <div class="ai-chat-header">
+
+                            <div class="ai-agent-info">
+
+                                <div class="ai-agent-avatar">
+                                    ✦
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        BizPilot AI
+                                    </strong>
+
+                                    <span>
+                                        Online · Ready to help
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="ai-new-chat-btn"
+                                id="newChatBtn"
+                            >
+                                + New chat
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- CHAT MESSAGES -->
+
+                        <div
+                            class="ai-chat-messages"
+                            id="aiChatMessages"
+                        >
+
+
+                            <!-- AI MESSAGE -->
+
+                            <div class="ai-message assistant">
+
+                                <div class="ai-message-avatar">
+                                    ✦
+                                </div>
+
+                                <div class="ai-message-content">
+
+                                    <span class="ai-message-name">
+                                        BizPilot AI
+                                    </span>
+
+                                    <div class="ai-message-bubble">
+
+                                        <p>
+                                            Hi Ashikur! 👋
+                                        </p>
+
+                                        <p>
+                                            I'm your BizPilot AI assistant. I can help you understand your business finances, analyze expenses, review invoices, and find opportunities to improve your cash flow.
+                                        </p>
+
+                                        <p>
+                                            What would you like to know?
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- QUICK QUESTIONS -->
+
+                            <div class="ai-quick-prompts">
+
+                                <button
+                                    type="button"
+                                    class="ai-prompt-btn"
+                                    data-prompt="How is my business performing this month?"
+                                >
+                                    📊 How is my business performing?
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="ai-prompt-btn"
+                                    data-prompt="Show me my biggest expenses."
+                                >
+                                    💰 What are my biggest expenses?
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="ai-prompt-btn"
+                                    data-prompt="Which invoices need my attention?"
+                                >
+                                    🧾 Which invoices need attention?
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="ai-prompt-btn"
+                                    data-prompt="How can I improve my cash flow?"
+                                >
+                                    🚀 How can I improve cash flow?
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- CHAT INPUT -->
+
+                        <form
+                            class="ai-chat-input-area"
+                            id="aiChatForm"
+                        >
+
+                            <div class="ai-chat-input-wrapper">
+
+                                <input
+                                    type="text"
+                                    id="aiChatInput"
+                                    placeholder="Ask BizPilot AI anything..."
+                                    autocomplete="off"
+                                >
+
+
+                                <button
+                                    type="submit"
+                                    class="ai-send-btn"
+                                    aria-label="Send message"
+                                >
+                                    ↑
+                                </button>
+
+                            </div>
+
+
+                            <span class="ai-input-hint">
+                                AI can make mistakes. Review important financial information.
+                            </span>
+
+                        </form>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         AI SIDEBAR
+                    ================================================== -->
+
+                    <aside class="ai-insights-column">
+
+
+                        <!-- BUSINESS SNAPSHOT -->
+
+                        <div class="dash-card ai-snapshot-card">
+
+                            <div class="ai-side-heading">
+
+                                <div>
+
+                                    <h3>
+                                        Business snapshot
+                                    </h3>
+
+                                    <p>
+                                        Current performance
+                                    </p>
+
+                                </div>
+
+                                <span>
+                                    ●
+                                </span>
+
+                            </div>
+
+
+                            <div class="ai-snapshot-item">
+
+                                <span>
+                                    Revenue
+                                </span>
+
+                                <strong>
+                                    $84,620
+                                </strong>
+
+                            </div>
+
+
+                            <div class="ai-snapshot-item">
+
+                                <span>
+                                    Expenses
+                                </span>
+
+                                <strong>
+                                    $18,420
+                                </strong>
+
+                            </div>
+
+
+                            <div class="ai-snapshot-item">
+
+                                <span>
+                                    Net profit
+                                </span>
+
+                                <strong>
+                                    $66,200
+                                </strong>
+
+                            </div>
+
+
+                            <div class="ai-snapshot-item">
+
+                                <span>
+                                    Profit margin
+                                </span>
+
+                                <strong>
+                                    78.2%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- AI SUGGESTIONS -->
+
+                        <div class="dash-card ai-suggestions-card">
+
+                            <div class="ai-side-heading">
+
+                                <div>
+
+                                    <h3>
+                                        AI suggestions
+                                    </h3>
+
+                                    <p>
+                                        Based on your data
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="ai-suggestion-item"
+                                data-prompt="Find expenses that I could reduce."
+                            >
+
+                                <span class="ai-suggestion-icon">
+                                    $
+                                </span>
+
+                                <span>
+
+                                    <strong>
+                                        Reduce expenses
+                                    </strong>
+
+                                    <small>
+                                        Find potential savings
+                                    </small>
+
+                                </span>
+
+                                <span>
+                                    →
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="ai-suggestion-item"
+                                data-prompt="Analyze my unpaid invoices."
+                            >
+
+                                <span class="ai-suggestion-icon">
+                                    !
+                                </span>
+
+                                <span>
+
+                                    <strong>
+                                        Review invoices
+                                    </strong>
+
+                                    <small>
+                                        Find overdue payments
+                                    </small>
+
+                                </span>
+
+                                <span>
+                                    →
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="ai-suggestion-item"
+                                data-prompt="Give me three ways to grow revenue."
+                            >
+
+                                <span class="ai-suggestion-icon">
+                                    ↗
+                                </span>
+
+                                <span>
+
+                                    <strong>
+                                        Grow revenue
+                                    </strong>
+
+                                    <small>
+                                        Explore opportunities
+                                    </small>
+
+                                </span>
+
+                                <span>
+                                    →
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- AI STATUS -->
+
+                        <div class="ai-status-card">
+
+                            <span class="ai-status-icon">
+                                ✦
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    AI is analyzing your business
+                                </strong>
+
+                                <p>
+                                    Connected to your workspace data.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+<script src="js/assistant.js"></script>
+
+
+</body>
+
+</html>

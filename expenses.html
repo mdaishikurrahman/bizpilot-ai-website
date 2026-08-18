@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="BizPilot AI expense management"
+    >
+
+    <title>Expenses — BizPilot AI</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/respon.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-page">
+
+    <div class="dashboard-bg"></div>
+
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar"
+        >
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+            >
+
+                <span class="dashboard-logo-icon">
+                    ✦
+                </span>
+
+                <span class="dashboard-logo-text">
+                    BizPilot<span>AI</span>
+                </span>
+
+            </a>
+
+
+            <!-- WORKSPACE -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    WORKSPACE
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+                    <a href="dashboard.html">
+
+                        <span class="nav-icon">⌂</span>
+
+                        <span>Overview</span>
+
+                    </a>
+
+
+                    <a href="invoices.html">
+
+                        <span class="nav-icon">▣</span>
+
+                        <span>Invoices</span>
+
+                    </a>
+
+
+                    <a
+                        href="expenses.html"
+                        class="active"
+                    >
+
+                        <span class="nav-icon">⌁</span>
+
+                        <span>Expenses</span>
+
+                    </a>
+
+
+                    <a href="customers.html">
+
+                        <span class="nav-icon">◎</span>
+
+                        <span>Customers</span>
+
+                    </a>
+
+
+                    <a href="analytics.html">
+
+                        <span class="nav-icon">◫</span>
+
+                        <span>Analytics</span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- AI -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    AI & AUTOMATION
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+                    <a href="ai-assistant.html">
+
+                        <span class="nav-icon">✦</span>
+
+                        <span>AI Assistant</span>
+
+                        <span class="ai-label">
+                            AI
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">↯</span>
+
+                        <span>Automations</span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">▤</span>
+
+                        <span>Reports</span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="sidebar-bottom">
+
+                <nav class="dashboard-nav">
+
+                    <a href="#">
+
+                        <span class="nav-icon">⚙</span>
+
+                        <span>Settings</span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">?</span>
+
+                        <span>Help Center</span>
+
+                    </a>
+
+                </nav>
+
+
+                <div class="workspace-card">
+
+                    <small>
+                        WORKSPACE
+                    </small>
+
+                    <strong>
+                        My Business
+                    </strong>
+
+                    <span class="workspace-plan">
+                        ✦ Pro workspace
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div class="header-title">
+
+                    <h1>
+                        Expenses
+                    </h1>
+
+                    <p>
+                        Track and manage your business spending
+                    </p>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <button
+                        type="button"
+                        class="mobile-dashboard-menu"
+                        id="dashboardMenuBtn"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="header-icon"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+                        ♧
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="user-button"
+                    >
+
+                        <span class="user-avatar">
+                            AR
+                        </span>
+
+                        <span>
+                            Ashikur
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+
+            <section class="dashboard-content">
+
+
+                <!-- PAGE HEADING -->
+
+                <div class="invoice-page-heading">
+
+                    <div>
+
+                        <h2>
+                            Expense management
+                        </h2>
+
+                        <p>
+                            Monitor your spending and keep your business finances organized.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="primary-dashboard-btn"
+                        id="addExpenseBtn"
+                    >
+                        + Add expense
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EXPENSE STATS
+                ================================================== -->
+
+                <div class="stats-grid expense-stats-grid">
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Total expenses
+                            </span>
+
+                            <span class="stat-icon">
+                                $
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $18,420
+                        </strong>
+
+                        <span class="stat-change negative">
+                            ↑ 8.4% this month
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                This month
+                            </span>
+
+                            <span class="stat-icon">
+                                ◷
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $4,820
+                        </strong>
+
+                        <span class="stat-change">
+                            24 transactions
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Tax deductible
+                            </span>
+
+                            <span class="stat-icon">
+                                ✓
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $12,640
+                        </strong>
+
+                        <span class="stat-change positive">
+                            68% of total expenses
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Pending review
+                            </span>
+
+                            <span class="stat-icon">
+                                !
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            6
+                        </strong>
+
+                        <span class="stat-change">
+                            Expenses need attention
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EXPENSE TABLE
+                ================================================== -->
+
+                <div class="dash-card expense-management-card">
+
+
+                    <div class="invoice-table-header">
+
+                        <div>
+
+                            <h3>
+                                Recent expenses
+                            </h3>
+
+                            <p>
+                                Review and manage your latest transactions
+                            </p>
+
+                        </div>
+
+
+                        <div class="invoice-controls">
+
+
+                            <div class="invoice-search">
+
+                                <span>
+                                    ⌕
+                                </span>
+
+                                <input
+                                    type="text"
+                                    id="expenseSearch"
+                                    placeholder="Search expenses..."
+                                >
+
+                            </div>
+
+
+                            <select
+                                id="categoryFilter"
+                                class="invoice-filter"
+                            >
+
+                                <option value="all">
+                                    All categories
+                                </option>
+
+                                <option value="software">
+                                    Software
+                                </option>
+
+                                <option value="marketing">
+                                    Marketing
+                                </option>
+
+                                <option value="office">
+                                    Office
+                                </option>
+
+                                <option value="travel">
+                                    Travel
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="table-wrapper">
+
+                        <table
+                            class="invoice-table all-expense-table"
+                        >
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Expense
+                                    </th>
+
+                                    <th>
+                                        Category
+                                    </th>
+
+                                    <th>
+                                        Date
+                                    </th>
+
+                                    <th>
+                                        Payment method
+                                    </th>
+
+                                    <th>
+                                        Amount
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                    <th>
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="expenseTableBody">
+
+
+                                <tr data-category="software">
+
+                                    <td>
+                                        <strong>
+                                            Adobe Creative Cloud
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Software
+                                    </td>
+
+                                    <td>
+                                        Aug 14, 2026
+                                    </td>
+
+                                    <td>
+                                        Visa •••• 4821
+                                    </td>
+
+                                    <td>
+                                        $59.99
+                                    </td>
+
+                                    <td>
+                                        <span class="status paid">
+                                            Approved
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn expense-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-category="marketing">
+
+                                    <td>
+                                        <strong>
+                                            Facebook Ads
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Marketing
+                                    </td>
+
+                                    <td>
+                                        Aug 12, 2026
+                                    </td>
+
+                                    <td>
+                                        Mastercard •••• 9284
+                                    </td>
+
+                                    <td>
+                                        $620.00
+                                    </td>
+
+                                    <td>
+                                        <span class="status paid">
+                                            Approved
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn expense-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-category="office">
+
+                                    <td>
+                                        <strong>
+                                            Office Supplies
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Office
+                                    </td>
+
+                                    <td>
+                                        Aug 09, 2026
+                                    </td>
+
+                                    <td>
+                                        Cash
+                                    </td>
+
+                                    <td>
+                                        $184.50
+                                    </td>
+
+                                    <td>
+                                        <span class="status pending">
+                                            Review
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn expense-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-category="travel">
+
+                                    <td>
+                                        <strong>
+                                            Business Flight
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Travel
+                                    </td>
+
+                                    <td>
+                                        Aug 06, 2026
+                                    </td>
+
+                                    <td>
+                                        Visa •••• 4821
+                                    </td>
+
+                                    <td>
+                                        $1,240.00
+                                    </td>
+
+                                    <td>
+                                        <span class="status paid">
+                                            Approved
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn expense-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-category="software">
+
+                                    <td>
+                                        <strong>
+                                            Notion Team Plan
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Software
+                                    </td>
+
+                                    <td>
+                                        Aug 03, 2026
+                                    </td>
+
+                                    <td>
+                                        Mastercard •••• 9284
+                                    </td>
+
+                                    <td>
+                                        $96.00
+                                    </td>
+
+                                    <td>
+                                        <span class="status pending">
+                                            Review
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn expense-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-category="marketing">
+
+                                    <td>
+                                        <strong>
+                                            Google Ads
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Marketing
+                                    </td>
+
+                                    <td>
+                                        Jul 29, 2026
+                                    </td>
+
+                                    <td>
+                                        Visa •••• 4821
+                                    </td>
+
+                                    <td>
+                                        $780.00
+                                    </td>
+
+                                    <td>
+                                        <span class="status paid">
+                                            Approved
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn expense-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+
+                    <!-- EMPTY STATE -->
+
+                    <div
+                        class="invoice-empty-state"
+                        id="expenseEmptyState"
+                        hidden
+                    >
+
+                        <span>
+                            $
+                        </span>
+
+                        <h3>
+                            No expenses found
+                        </h3>
+
+                        <p>
+                            Try changing your search or category filter.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+<script src="js/expenses.js"></script>
+
+
+</body>
+
+</html>

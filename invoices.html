@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="BizPilot AI invoice management"
+    >
+
+    <title>Invoices — BizPilot AI</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/respon.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-page">
+
+    <div class="dashboard-bg"></div>
+
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar"
+        >
+
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+            >
+
+                <span class="dashboard-logo-icon">
+                    ✦
+                </span>
+
+                <span class="dashboard-logo-text">
+                    BizPilot<span>AI</span>
+                </span>
+
+            </a>
+
+
+
+            <!-- WORKSPACE -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    WORKSPACE
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+
+                    <a href="dashboard.html">
+
+                        <span class="nav-icon">
+                            ⌂
+                        </span>
+
+                        <span>
+                            Overview
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="invoices.html"
+                        class="active"
+                    >
+
+                        <span class="nav-icon">
+                            ▣
+                        </span>
+
+                        <span>
+                            Invoices
+                        </span>
+
+                    </a>
+
+
+                    <a href="expenses.html">
+
+                        <span class="nav-icon">
+                            ⌁
+                        </span>
+
+                        <span>
+                            Expenses
+                        </span>
+
+                    </a>
+
+
+                    <a href="customers.html">
+
+                        <span class="nav-icon">
+                            ◎
+                        </span>
+
+                        <span>
+                            Customers
+                        </span>
+
+                    </a>
+
+
+                    <a href="analytics.html">
+
+                        <span class="nav-icon">
+                            ◫
+                        </span>
+
+                        <span>
+                            Analytics
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+
+            <!-- AI & AUTOMATION -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    AI & AUTOMATION
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+
+                    <a href="ai-assistant.html">
+
+                        <span class="nav-icon">
+                            ✦
+                        </span>
+
+                        <span>
+                            AI Assistant
+                        </span>
+
+                        <span class="ai-label">
+                            AI
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">
+                            ↯
+                        </span>
+
+                        <span>
+                            Automations
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">
+                            ▤
+                        </span>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="sidebar-bottom">
+
+
+                <nav class="dashboard-nav">
+
+                    <a href="#">
+
+                        <span class="nav-icon">
+                            ⚙
+                        </span>
+
+                        <span>
+                            Settings
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">
+                            ?
+                        </span>
+
+                        <span>
+                            Help Center
+                        </span>
+
+                    </a>
+
+                </nav>
+
+
+                <div class="workspace-card">
+
+                    <small>
+                        WORKSPACE
+                    </small>
+
+                    <strong>
+                        My Business
+                    </strong>
+
+                    <span class="workspace-plan">
+                        ✦ Pro workspace
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+
+                <div class="header-title">
+
+                    <h1>
+                        Invoices
+                    </h1>
+
+                    <p>
+                        Create, send and manage your invoices
+                    </p>
+
+                </div>
+
+
+                <div class="header-actions">
+
+
+                    <button
+                        type="button"
+                        class="mobile-dashboard-menu"
+                        id="dashboardMenuBtn"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="header-icon"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+                        ♧
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="user-button"
+                    >
+
+                        <span class="user-avatar">
+                            AR
+                        </span>
+
+                        <span>
+                            Ashikur
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+
+            <section class="dashboard-content">
+
+
+                <!-- PAGE HEADING -->
+
+                <div class="invoice-page-heading">
+
+                    <div>
+
+                        <h2>
+                            Invoice management
+                        </h2>
+
+                        <p>
+                            Keep track of your invoices, payments and outstanding balances.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="primary-dashboard-btn"
+                        id="createInvoiceBtn"
+                    >
+                        + Create invoice
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     STATS
+                ================================================== -->
+
+                <div class="stats-grid invoice-stats-grid">
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Total invoiced
+                            </span>
+
+                            <span class="stat-icon">
+                                $
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $84,250
+                        </strong>
+
+                        <span class="stat-change positive">
+                            ↑ 12.8% this month
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Paid
+                            </span>
+
+                            <span class="stat-icon">
+                                ✓
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $71,770
+                        </strong>
+
+                        <span class="stat-change positive">
+                            85.2% collection rate
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Outstanding
+                            </span>
+
+                            <span class="stat-icon">
+                                ◷
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $12,480
+                        </strong>
+
+                        <span class="stat-change">
+                            8 invoices pending
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Overdue
+                            </span>
+
+                            <span class="stat-icon">
+                                !
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $2,340
+                        </strong>
+
+                        <span class="stat-change negative">
+                            3 invoices overdue
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     INVOICE TABLE CARD
+                ================================================== -->
+
+                <div class="dash-card invoice-management-card">
+
+
+                    <!-- TABLE HEADER -->
+
+                    <div class="invoice-table-header">
+
+
+                        <div>
+
+                            <h3>
+                                All invoices
+                            </h3>
+
+                            <p>
+                                View and manage your latest invoices
+                            </p>
+
+                        </div>
+
+
+                        <div class="invoice-controls">
+
+
+                            <!-- Search -->
+
+                            <div class="invoice-search">
+
+                                <span>
+                                    ⌕
+                                </span>
+
+                                <input
+                                    type="text"
+                                    id="invoiceSearch"
+                                    placeholder="Search invoices..."
+                                >
+
+                            </div>
+
+
+                            <!-- Filter -->
+
+                            <select
+                                id="invoiceStatusFilter"
+                                class="invoice-filter"
+                            >
+
+                                <option value="all">
+                                    All status
+                                </option>
+
+                                <option value="paid">
+                                    Paid
+                                </option>
+
+                                <option value="pending">
+                                    Pending
+                                </option>
+
+                                <option value="overdue">
+                                    Overdue
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- TABLE -->
+
+                    <div class="table-wrapper">
+
+                        <table class="invoice-table">
+
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Invoice
+                                    </th>
+
+                                    <th>
+                                        Customer
+                                    </th>
+
+                                    <th>
+                                        Date
+                                    </th>
+
+                                    <th>
+                                        Due date
+                                    </th>
+
+                                    <th>
+                                        Amount
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                    <th>
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+
+                            <tbody id="invoiceTableBody">
+
+
+                                <tr data-status="paid">
+
+                                    <td>
+                                        <strong>
+                                            #INV-1048
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Acme Corporation
+                                    </td>
+
+                                    <td>
+                                        Aug 14, 2026
+                                    </td>
+
+                                    <td>
+                                        Aug 28, 2026
+                                    </td>
+
+                                    <td>
+                                        $2,450.00
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status paid">
+                                            Paid
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <tr data-status="pending">
+
+                                    <td>
+                                        <strong>
+                                            #INV-1047
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Nova Digital
+                                    </td>
+
+                                    <td>
+                                        Aug 12, 2026
+                                    </td>
+
+                                    <td>
+                                        Aug 26, 2026
+                                    </td>
+
+                                    <td>
+                                        $1,820.00
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status pending">
+                                            Pending
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <tr data-status="paid">
+
+                                    <td>
+                                        <strong>
+                                            #INV-1046
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Bright Labs
+                                    </td>
+
+                                    <td>
+                                        Aug 09, 2026
+                                    </td>
+
+                                    <td>
+                                        Aug 23, 2026
+                                    </td>
+
+                                    <td>
+                                        $3,600.00
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status paid">
+                                            Paid
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <tr data-status="overdue">
+
+                                    <td>
+                                        <strong>
+                                            #INV-1045
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Vertex Studio
+                                    </td>
+
+                                    <td>
+                                        Jul 29, 2026
+                                    </td>
+
+                                    <td>
+                                        Aug 12, 2026
+                                    </td>
+
+                                    <td>
+                                        $980.00
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status overdue">
+                                            Overdue
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <tr data-status="pending">
+
+                                    <td>
+                                        <strong>
+                                            #INV-1044
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Pixel Works
+                                    </td>
+
+                                    <td>
+                                        Jul 26, 2026
+                                    </td>
+
+                                    <td>
+                                        Aug 20, 2026
+                                    </td>
+
+                                    <td>
+                                        $1,540.00
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status pending">
+                                            Pending
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <tr data-status="paid">
+
+                                    <td>
+                                        <strong>
+                                            #INV-1043
+                                        </strong>
+                                    </td>
+
+                                    <td>
+                                        Orbit Media
+                                    </td>
+
+                                    <td>
+                                        Jul 22, 2026
+                                    </td>
+
+                                    <td>
+                                        Aug 05, 2026
+                                    </td>
+
+                                    <td>
+                                        $2,890.00
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status paid">
+                                            Paid
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+
+                    <!-- EMPTY STATE -->
+
+                    <div
+                        class="invoice-empty-state"
+                        id="invoiceEmptyState"
+                        hidden
+                    >
+
+                        <span>
+                            ▣
+                        </span>
+
+                        <h3>
+                            No invoices found
+                        </h3>
+
+                        <p>
+                            Try changing your search or status filter.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+<script src="js/invoices.js"></script>
+
+
+</body>
+
+</html>

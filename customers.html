@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="BizPilot AI customer management"
+    >
+
+    <title>Customers — BizPilot AI</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/respon.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-page">
+
+    <div class="dashboard-bg"></div>
+
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar"
+        >
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+            >
+
+                <span class="dashboard-logo-icon">
+                    ✦
+                </span>
+
+                <span class="dashboard-logo-text">
+                    BizPilot<span>AI</span>
+                </span>
+
+            </a>
+
+
+            <!-- WORKSPACE -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    WORKSPACE
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+                    <a href="dashboard.html">
+
+                        <span class="nav-icon">⌂</span>
+
+                        <span>Overview</span>
+
+                    </a>
+
+
+                    <a href="invoices.html">
+
+                        <span class="nav-icon">▣</span>
+
+                        <span>Invoices</span>
+
+                    </a>
+
+
+                    <a href="expenses.html">
+
+                        <span class="nav-icon">⌁</span>
+
+                        <span>Expenses</span>
+
+                    </a>
+
+
+                    <a
+                        href="customers.html"
+                        class="active"
+                    >
+
+                        <span class="nav-icon">◎</span>
+
+                        <span>Customers</span>
+
+                    </a>
+
+
+                    <a href="analytics.html">
+
+                        <span class="nav-icon">◫</span>
+
+                        <span>Analytics</span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- AI -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    AI & AUTOMATION
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+                    <a href="ai-assistant.html">
+
+                        <span class="nav-icon">✦</span>
+
+                        <span>AI Assistant</span>
+
+                        <span class="ai-label">
+                            AI
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">↯</span>
+
+                        <span>Automations</span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">▤</span>
+
+                        <span>Reports</span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="sidebar-bottom">
+
+                <nav class="dashboard-nav">
+
+                    <a href="#">
+
+                        <span class="nav-icon">⚙</span>
+
+                        <span>Settings</span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">?</span>
+
+                        <span>Help Center</span>
+
+                    </a>
+
+                </nav>
+
+
+                <div class="workspace-card">
+
+                    <small>
+                        WORKSPACE
+                    </small>
+
+                    <strong>
+                        My Business
+                    </strong>
+
+                    <span class="workspace-plan">
+                        ✦ Pro workspace
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div class="header-title">
+
+                    <h1>
+                        Customers
+                    </h1>
+
+                    <p>
+                        Manage your customers and relationships
+                    </p>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <button
+                        type="button"
+                        class="mobile-dashboard-menu"
+                        id="dashboardMenuBtn"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="header-icon"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+                        ♧
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="user-button"
+                    >
+
+                        <span class="user-avatar">
+                            AR
+                        </span>
+
+                        <span>
+                            Ashikur
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+
+            <section class="dashboard-content">
+
+
+                <!-- PAGE HEADING -->
+
+                <div class="invoice-page-heading">
+
+                    <div>
+
+                        <h2>
+                            Customer management
+                        </h2>
+
+                        <p>
+                            Keep track of customers, invoices and payment activity.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="primary-dashboard-btn"
+                        id="addCustomerBtn"
+                    >
+                        + Add customer
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CUSTOMER STATS
+                ================================================== -->
+
+                <div class="stats-grid customer-stats-grid">
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Total customers
+                            </span>
+
+                            <span class="stat-icon">
+                                ◎
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            248
+                        </strong>
+
+                        <span class="stat-change positive">
+                            ↑ 12.5% this month
+                        </span>
+
+                    </div>
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Active customers
+                            </span>
+
+                            <span class="stat-icon">
+                                ✓
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            186
+                        </strong>
+
+                        <span class="stat-change">
+                            75% of total
+                        </span>
+
+                    </div>
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Outstanding
+                            </span>
+
+                            <span class="stat-icon">
+                                $
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $24,680
+                        </strong>
+
+                        <span class="stat-change negative">
+                            14 invoices pending
+                        </span>
+
+                    </div>
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                New this month
+                            </span>
+
+                            <span class="stat-icon">
+                                +
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            18
+                        </strong>
+
+                        <span class="stat-change positive">
+                            ↑ 8.2% from last month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CUSTOMER LIST
+                ================================================== -->
+
+                <div class="dash-card customer-management-card">
+
+
+                    <!-- TABLE HEADER -->
+
+                    <div class="invoice-table-header">
+
+                        <div>
+
+                            <h3>
+                                All customers
+                            </h3>
+
+                            <p>
+                                View and manage your customer relationships
+                            </p>
+
+                        </div>
+
+
+                        <div class="invoice-controls">
+
+
+                            <!-- SEARCH -->
+
+                            <div class="invoice-search">
+
+                                <span>
+                                    ⌕
+                                </span>
+
+                                <input
+                                    type="text"
+                                    id="customerSearch"
+                                    placeholder="Search customers..."
+                                >
+
+                            </div>
+
+
+                            <!-- STATUS FILTER -->
+
+                            <select
+                                id="customerStatusFilter"
+                                class="invoice-filter"
+                            >
+
+                                <option value="all">
+                                    All customers
+                                </option>
+
+                                <option value="active">
+                                    Active
+                                </option>
+
+                                <option value="inactive">
+                                    Inactive
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- TABLE -->
+
+                    <div class="table-wrapper">
+
+                        <table
+                            class="invoice-table customer-table"
+                        >
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Customer
+                                    </th>
+
+                                    <th>
+                                        Company
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Phone
+                                    </th>
+
+                                    <th>
+                                        Total spent
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                    <th>
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="customerTableBody">
+
+
+                                <tr data-status="active">
+
+                                    <td>
+
+                                        <div class="customer-name-cell">
+
+                                            <span class="customer-avatar">
+                                                JD
+                                            </span>
+
+                                            <strong>
+                                                John Davis
+                                            </strong>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Davis Consulting
+                                    </td>
+
+                                    <td>
+                                        john@davis.com
+                                    </td>
+
+                                    <td>
+                                        +1 202 555 0148
+                                    </td>
+
+                                    <td>
+                                        $8,420
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status paid">
+                                            Active
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn customer-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-status="active">
+
+                                    <td>
+
+                                        <div class="customer-name-cell">
+
+                                            <span class="customer-avatar">
+                                                SM
+                                            </span>
+
+                                            <strong>
+                                                Sarah Miller
+                                            </strong>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Miller Studio
+                                    </td>
+
+                                    <td>
+                                        sarah@miller.com
+                                    </td>
+
+                                    <td>
+                                        +1 202 555 0182
+                                    </td>
+
+                                    <td>
+                                        $6,750
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status paid">
+                                            Active
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn customer-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-status="active">
+
+                                    <td>
+
+                                        <div class="customer-name-cell">
+
+                                            <span class="customer-avatar">
+                                                MW
+                                            </span>
+
+                                            <strong>
+                                                Michael Wilson
+                                            </strong>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Wilson Tech
+                                    </td>
+
+                                    <td>
+                                        michael@wilson.io
+                                    </td>
+
+                                    <td>
+                                        +1 202 555 0119
+                                    </td>
+
+                                    <td>
+                                        $12,340
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status paid">
+                                            Active
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn customer-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-status="inactive">
+
+                                    <td>
+
+                                        <div class="customer-name-cell">
+
+                                            <span class="customer-avatar">
+                                                EB
+                                            </span>
+
+                                            <strong>
+                                                Emma Brown
+                                            </strong>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Brown Media
+                                    </td>
+
+                                    <td>
+                                        emma@brownmedia.com
+                                    </td>
+
+                                    <td>
+                                        +1 202 555 0194
+                                    </td>
+
+                                    <td>
+                                        $3,280
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status pending">
+                                            Inactive
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn customer-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-status="active">
+
+                                    <td>
+
+                                        <div class="customer-name-cell">
+
+                                            <span class="customer-avatar">
+                                                OL
+                                            </span>
+
+                                            <strong>
+                                                Olivia Lee
+                                            </strong>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Lee Digital
+                                    </td>
+
+                                    <td>
+                                        olivia@leedigital.com
+                                    </td>
+
+                                    <td>
+                                        +1 202 555 0167
+                                    </td>
+
+                                    <td>
+                                        $9,860
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status paid">
+                                            Active
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn customer-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr data-status="inactive">
+
+                                    <td>
+
+                                        <div class="customer-name-cell">
+
+                                            <span class="customer-avatar">
+                                                RT
+                                            </span>
+
+                                            <strong>
+                                                Robert Taylor
+                                            </strong>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Taylor & Co.
+                                    </td>
+
+                                    <td>
+                                        robert@taylorco.com
+                                    </td>
+
+                                    <td>
+                                        +1 202 555 0136
+                                    </td>
+
+                                    <td>
+                                        $2,140
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status pending">
+                                            Inactive
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="invoice-action-btn customer-action-btn"
+                                        >
+                                            ⋮
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+
+                    <!-- EMPTY STATE -->
+
+                    <div
+                        class="invoice-empty-state"
+                        id="customerEmptyState"
+                        hidden
+                    >
+
+                        <span>
+                            ◎
+                        </span>
+
+                        <h3>
+                            No customers found
+                        </h3>
+
+                        <p>
+                            Try changing your search or status filter.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+<script src="js/customers.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="BizPilot AI business analytics"
+    >
+
+    <title>Analytics — BizPilot AI</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/respon.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-page">
+
+    <div class="dashboard-bg"></div>
+
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar"
+        >
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+            >
+
+                <span class="dashboard-logo-icon">
+                    ✦
+                </span>
+
+                <span class="dashboard-logo-text">
+                    BizPilot<span>AI</span>
+                </span>
+
+            </a>
+
+
+            <!-- WORKSPACE -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    WORKSPACE
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+                    <a href="dashboard.html">
+
+                        <span class="nav-icon">⌂</span>
+
+                        <span>Overview</span>
+
+                    </a>
+
+
+                    <a href="invoices.html">
+
+                        <span class="nav-icon">▣</span>
+
+                        <span>Invoices</span>
+
+                    </a>
+
+
+                    <a href="expenses.html">
+
+                        <span class="nav-icon">⌁</span>
+
+                        <span>Expenses</span>
+
+                    </a>
+
+
+                    <a href="customers.html">
+
+                        <span class="nav-icon">◎</span>
+
+                        <span>Customers</span>
+
+                    </a>
+
+
+                    <a
+                        href="analytics.html"
+                        class="active"
+                    >
+
+                        <span class="nav-icon">◫</span>
+
+                        <span>Analytics</span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- AI -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    AI & AUTOMATION
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+                    <a href="ai-assistant.html">
+
+                        <span class="nav-icon">✦</span>
+
+                        <span>AI Assistant</span>
+
+                        <span class="ai-label">
+                            AI
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">↯</span>
+
+                        <span>Automations</span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">▤</span>
+
+                        <span>Reports</span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="sidebar-bottom">
+
+                <nav class="dashboard-nav">
+
+                    <a href="#">
+
+                        <span class="nav-icon">⚙</span>
+
+                        <span>Settings</span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">?</span>
+
+                        <span>Help Center</span>
+
+                    </a>
+
+                </nav>
+
+
+                <div class="workspace-card">
+
+                    <small>
+                        WORKSPACE
+                    </small>
+
+                    <strong>
+                        My Business
+                    </strong>
+
+                    <span class="workspace-plan">
+                        ✦ Pro workspace
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div class="header-title">
+
+                    <h1>
+                        Analytics
+                    </h1>
+
+                    <p>
+                        Understand your business performance
+                    </p>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <button
+                        type="button"
+                        class="mobile-dashboard-menu"
+                        id="dashboardMenuBtn"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="header-icon"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+                        ♧
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="user-button"
+                    >
+
+                        <span class="user-avatar">
+                            AR
+                        </span>
+
+                        <span>
+                            Ashikur
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+
+            <section class="dashboard-content">
+
+
+                <!-- PAGE HEADING -->
+
+                <div class="invoice-page-heading">
+
+                    <div>
+
+                        <h2>
+                            Business analytics
+                        </h2>
+
+                        <p>
+                            Track revenue, expenses and customer growth in one place.
+                        </p>
+
+                    </div>
+
+
+                    <div class="analytics-period-control">
+
+                        <select
+                            id="analyticsPeriod"
+                            class="invoice-filter"
+                        >
+
+                            <option value="30">
+                                Last 30 days
+                            </option>
+
+                            <option value="90">
+                                Last 90 days
+                            </option>
+
+                            <option value="180">
+                                Last 6 months
+                            </option>
+
+                            <option value="365">
+                                Last 12 months
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ANALYTICS STATS
+                ================================================== -->
+
+                <div class="stats-grid analytics-stats-grid">
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Total revenue
+                            </span>
+
+                            <span class="stat-icon">
+                                $
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $84,620
+                        </strong>
+
+                        <span class="stat-change positive">
+                            ↑ 18.6% vs previous period
+                        </span>
+
+                    </div>
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Total expenses
+                            </span>
+
+                            <span class="stat-icon">
+                                ↘
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $18,420
+                        </strong>
+
+                        <span class="stat-change negative">
+                            ↑ 8.4% vs previous period
+                        </span>
+
+                    </div>
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Net profit
+                            </span>
+
+                            <span class="stat-icon">
+                                ✓
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            $66,200
+                        </strong>
+
+                        <span class="stat-change positive">
+                            ↑ 22.1% vs previous period
+                        </span>
+
+                    </div>
+
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Profit margin
+                            </span>
+
+                            <span class="stat-icon">
+                                %
+                            </span>
+
+                        </div>
+
+                        <strong class="stat-value">
+                            78.2%
+                        </strong>
+
+                        <span class="stat-change positive">
+                            ↑ 4.3% improvement
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     REVENUE CHART
+                ================================================== -->
+
+                <div class="analytics-main-grid">
+
+
+                    <div class="dash-card analytics-chart-card">
+
+                        <div class="analytics-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Revenue overview
+                                </h3>
+
+                                <p>
+                                    Revenue performance over time
+                                </p>
+
+                            </div>
+
+
+                            <span class="analytics-chart-value">
+                                $84.6K
+                            </span>
+
+                        </div>
+
+
+                        <div class="analytics-chart">
+
+                            <div class="chart-y-axis">
+
+                                <span>
+                                    $30K
+                                </span>
+
+                                <span>
+                                    $20K
+                                </span>
+
+                                <span>
+                                    $10K
+                                </span>
+
+                                <span>
+                                    $0
+                                </span>
+
+                            </div>
+
+
+                            <div class="chart-area">
+
+                                <div class="chart-grid-line"></div>
+                                <div class="chart-grid-line"></div>
+                                <div class="chart-grid-line"></div>
+                                <div class="chart-grid-line"></div>
+
+
+                                <svg
+                                    class="revenue-line-chart"
+                                    viewBox="0 0 700 260"
+                                    preserveAspectRatio="none"
+                                >
+
+                                    <defs>
+
+                                        <linearGradient
+                                            id="revenueGradient"
+                                            x1="0"
+                                            y1="0"
+                                            x2="0"
+                                            y2="1"
+                                        >
+
+                                            <stop
+                                                offset="0%"
+                                                stop-opacity="0.20"
+                                            >
+
+                                            </stop>
+
+                                            <stop
+                                                offset="100%"
+                                                stop-opacity="0"
+                                            >
+
+                                            </stop>
+
+                                        </linearGradient>
+
+                                    </defs>
+
+
+                                    <path
+                                        class="chart-fill"
+                                        d="M0,210
+                                           C60,190 80,175 120,185
+                                           S190,145 235,155
+                                           S300,110 350,130
+                                           S410,90 455,105
+                                           S520,75 565,90
+                                           S640,45 700,60
+                                           L700,260
+                                           L0,260 Z"
+                                    ></path>
+
+
+                                    <path
+                                        class="chart-line"
+                                        d="M0,210
+                                           C60,190 80,175 120,185
+                                           S190,145 235,155
+                                           S300,110 350,130
+                                           S410,90 455,105
+                                           S520,75 565,90
+                                           S640,45 700,60"
+                                    ></path>
+
+
+                                    <circle
+                                        cx="700"
+                                        cy="60"
+                                        r="5"
+                                        class="chart-point"
+                                    ></circle>
+
+                                </svg>
+
+
+                                <div class="chart-x-axis">
+
+                                    <span>Jan</span>
+                                    <span>Feb</span>
+                                    <span>Mar</span>
+                                    <span>Apr</span>
+                                    <span>May</span>
+                                    <span>Jun</span>
+                                    <span>Jul</span>
+                                    <span>Aug</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EXPENSE BREAKDOWN -->
+
+                    <div class="dash-card analytics-breakdown-card">
+
+                        <div class="analytics-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Expense breakdown
+                                </h3>
+
+                                <p>
+                                    By category
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="expense-donut-wrapper">
+
+                            <div class="expense-donut">
+
+                                <div class="expense-donut-center">
+
+                                    <strong>
+                                        $18.4K
+                                    </strong>
+
+                                    <span>
+                                        Total
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="expense-legend">
+
+                            <div>
+
+                                <span class="legend-dot software"></span>
+
+                                <span>
+                                    Software
+                                </span>
+
+                                <strong>
+                                    $5,420
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="legend-dot marketing"></span>
+
+                                <span>
+                                    Marketing
+                                </span>
+
+                                <strong>
+                                    $4,820
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="legend-dot office"></span>
+
+                                <span>
+                                    Office
+                                </span>
+
+                                <strong>
+                                    $3,180
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="legend-dot travel"></span>
+
+                                <span>
+                                    Travel
+                                </span>
+
+                                <strong>
+                                    $2,940
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="legend-dot other"></span>
+
+                                <span>
+                                    Other
+                                </span>
+
+                                <strong>
+                                    $2,060
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     LOWER ANALYTICS
+                ================================================== -->
+
+                <div class="analytics-lower-grid">
+
+
+                    <!-- CUSTOMER GROWTH -->
+
+                    <div class="dash-card analytics-small-card">
+
+                        <div class="analytics-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Customer growth
+                                </h3>
+
+                                <p>
+                                    New customers over time
+                                </p>
+
+                            </div>
+
+                            <strong>
+                                +18
+                            </strong>
+
+                        </div>
+
+
+                        <div class="mini-bar-chart">
+
+                            <div style="height:35%"></div>
+                            <div style="height:48%"></div>
+                            <div style="height:42%"></div>
+                            <div style="height:60%"></div>
+                            <div style="height:54%"></div>
+                            <div style="height:73%"></div>
+                            <div style="height:68%"></div>
+                            <div style="height:92%"></div>
+
+                        </div>
+
+
+                        <div class="mini-chart-labels">
+
+                            <span>Jan</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                            <span>Jul</span>
+                            <span>Aug</span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- TOP CUSTOMERS -->
+
+                    <div class="dash-card analytics-small-card">
+
+                        <div class="analytics-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Top customers
+                                </h3>
+
+                                <p>
+                                    Highest revenue contribution
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="top-customer-list">
+
+
+                            <div class="top-customer-item">
+
+                                <span class="customer-rank">
+                                    01
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Michael Wilson
+                                    </strong>
+
+                                    <small>
+                                        Wilson Tech
+                                    </small>
+
+                                </div>
+
+                                <strong>
+                                    $12.3K
+                                </strong>
+
+                            </div>
+
+
+                            <div class="top-customer-item">
+
+                                <span class="customer-rank">
+                                    02
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Olivia Lee
+                                    </strong>
+
+                                    <small>
+                                        Lee Digital
+                                    </small>
+
+                                </div>
+
+                                <strong>
+                                    $9.8K
+                                </strong>
+
+                            </div>
+
+
+                            <div class="top-customer-item">
+
+                                <span class="customer-rank">
+                                    03
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        John Davis
+                                    </strong>
+
+                                    <small>
+                                        Davis Consulting
+                                    </small>
+
+                                </div>
+
+                                <strong>
+                                    $8.4K
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- AI INSIGHT -->
+
+                    <div class="dash-card analytics-ai-card">
+
+                        <div class="analytics-ai-icon">
+                            ✦
+                        </div>
+
+                        <span>
+                            AI INSIGHT
+                        </span>
+
+                        <h3>
+                            Your business is trending upward
+                        </h3>
+
+                        <p>
+                            Revenue is growing faster than expenses this period. Consider increasing your marketing investment by 10–15% to maintain momentum.
+                        </p>
+
+                        <a href="ai-assistant.html">
+                            Ask AI Assistant →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/main.js"></script>
+
+<script src="js/analytics.js"></script>
+
+
+</body>
+
+</html>

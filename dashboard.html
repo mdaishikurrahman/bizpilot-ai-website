@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="BizPilot AI business dashboard"
+    >
+
+    <title>Dashboard — BizPilot AI</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/respon.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-page">
+
+    <div class="dashboard-bg"></div>
+
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="dashboard-sidebar"
+            id="dashboardSidebar"
+        >
+
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="dashboard-logo"
+            >
+
+                <span class="dashboard-logo-icon">
+                    ✦
+                </span>
+
+                <span class="dashboard-logo-text">
+                    BizPilot<span>AI</span>
+                </span>
+
+            </a>
+
+
+
+            <!-- WORKSPACE -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    WORKSPACE
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+
+                    <a
+                        href="dashboard.html"
+                        class="active"
+                    >
+
+                        <span class="nav-icon">
+                            ⌂
+                        </span>
+
+                        <span>
+                            Overview
+                        </span>
+
+                    </a>
+
+
+                    <a href="invoices.html">
+
+                        <span class="nav-icon">
+                            ▣
+                        </span>
+
+                        <span>
+                            Invoices
+                        </span>
+
+                    </a>
+
+
+                    <a href="expenses.html">
+
+                        <span class="nav-icon">
+                            ⌁
+                        </span>
+
+                        <span>
+                            Expenses
+                        </span>
+
+                    </a>
+
+
+                    <a href="customers.html">
+
+                        <span class="nav-icon">
+                            ◎
+                        </span>
+
+                        <span>
+                            Customers
+                        </span>
+
+                    </a>
+
+
+                    <a href="analytics.html">
+
+                        <span class="nav-icon">
+                            ◫
+                        </span>
+
+                        <span>
+                            Analytics
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+
+            <!-- AI & AUTOMATION -->
+
+            <div class="sidebar-section">
+
+                <span class="sidebar-label">
+                    AI & AUTOMATION
+                </span>
+
+
+                <nav class="dashboard-nav">
+
+
+                    <a href="ai-assistant.html">
+
+                        <span class="nav-icon">
+                            ✦
+                        </span>
+
+                        <span>
+                            AI Assistant
+                        </span>
+
+                        <span class="ai-label">
+                            AI
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">
+                            ↯
+                        </span>
+
+                        <span>
+                            Automations
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">
+                            ▤
+                        </span>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="sidebar-bottom">
+
+
+                <nav class="dashboard-nav">
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">
+                            ⚙
+                        </span>
+
+                        <span>
+                            Settings
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <span class="nav-icon">
+                            ?
+                        </span>
+
+                        <span>
+                            Help Center
+                        </span>
+
+                    </a>
+
+                </nav>
+
+
+
+                <!-- Workspace Card -->
+
+                <div class="workspace-card">
+
+                    <small>
+                        WORKSPACE
+                    </small>
+
+                    <strong>
+                        My Business
+                    </strong>
+
+                    <span class="workspace-plan">
+                        ✦ Pro workspace
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+
+                <div class="header-title">
+
+                    <h1>
+                        Good morning, Ashikur
+                    </h1>
+
+                    <p>
+                        Here's what's happening with your business today.
+                    </p>
+
+                </div>
+
+
+
+                <div class="header-actions">
+
+
+                    <!-- Mobile Menu -->
+
+                    <button
+                        type="button"
+                        class="mobile-dashboard-menu"
+                        id="dashboardMenuBtn"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
+
+
+                    <!-- Notification -->
+
+                    <button
+                        type="button"
+                        class="header-icon"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+                        ♧
+                    </button>
+
+
+                    <!-- User -->
+
+                    <button
+                        type="button"
+                        class="user-button"
+                    >
+
+                        <span class="user-avatar">
+                            AR
+                        </span>
+
+                        <span>
+                            Ashikur
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+
+            <section class="dashboard-content">
+
+
+                <!-- =================================================
+                     QUICK ACTIONS
+                ================================================== -->
+
+                <div class="dashboard-welcome-row">
+
+
+                    <div>
+
+                        <span class="dashboard-eyebrow">
+                            BUSINESS OVERVIEW
+                        </span>
+
+                        <h2>
+                            Your business at a glance
+                        </h2>
+
+                    </div>
+
+
+                    <div class="dashboard-quick-actions">
+
+                        <a
+                            href="invoices.html"
+                            class="secondary-dashboard-btn"
+                        >
+                            View invoices
+                        </a>
+
+                        <a
+                            href="expenses.html"
+                            class="primary-dashboard-btn"
+                        >
+                            + Add expense
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     STATS
+                ================================================== -->
+
+                <div class="stats-grid">
+
+
+                    <!-- Revenue -->
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Total revenue
+                            </span>
+
+                            <span class="stat-icon">
+                                $
+                            </span>
+
+                        </div>
+
+
+                        <strong class="stat-value">
+                            $84,250
+                        </strong>
+
+
+                        <span class="stat-change positive">
+                            ↑ 12.8% this month
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Invoices -->
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Outstanding
+                            </span>
+
+                            <span class="stat-icon">
+                                ▣
+                            </span>
+
+                        </div>
+
+
+                        <strong class="stat-value">
+                            $12,480
+                        </strong>
+
+
+                        <span class="stat-change">
+                            8 invoices pending
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Expenses -->
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Expenses
+                            </span>
+
+                            <span class="stat-icon">
+                                ⌁
+                            </span>
+
+                        </div>
+
+
+                        <strong class="stat-value">
+                            $18,420
+                        </strong>
+
+
+                        <span class="stat-change negative">
+                            ↑ 8.4% this month
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Customers -->
+
+                    <div class="dash-card stat-box">
+
+                        <div class="stat-top">
+
+                            <span class="stat-name">
+                                Customers
+                            </span>
+
+                            <span class="stat-icon">
+                                ◎
+                            </span>
+
+                        </div>
+
+
+                        <strong class="stat-value">
+                            126
+                        </strong>
+
+
+                        <span class="stat-change positive">
+                            ↑ 6 new this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     MAIN DASHBOARD GRID
+                ================================================== -->
+
+                <div class="dashboard-main-grid">
+
+
+                    <!-- =================================================
+                         REVENUE CHART
+                    ================================================== -->
+
+                    <div class="dash-card dashboard-chart-card">
+
+
+                        <div class="dashboard-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Revenue overview
+                                </h3>
+
+                                <p>
+                                    Monthly revenue performance
+                                </p>
+
+                            </div>
+
+
+                            <select
+                                class="dashboard-select"
+                                id="revenuePeriod"
+                            >
+
+                                <option value="6">
+                                    Last 6 months
+                                </option>
+
+                                <option value="12">
+                                    Last 12 months
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="revenue-summary">
+
+                            <strong>
+                                $84,250
+                            </strong>
+
+                            <span class="positive">
+                                +12.8%
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Chart -->
+
+                        <div
+                            class="revenue-chart"
+                            id="revenueChart"
+                        >
+
+                            <div class="chart-y-axis">
+
+                                <span>
+                                    $100k
+                                </span>
+
+                                <span>
+                                    $75k
+                                </span>
+
+                                <span>
+                                    $50k
+                                </span>
+
+                                <span>
+                                    $25k
+                                </span>
+
+                                <span>
+                                    $0
+                                </span>
+
+                            </div>
+
+
+                            <div class="chart-area">
+
+
+                                <div class="chart-grid-lines">
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="chart-bars">
+
+                                    <div class="chart-bar-item">
+
+                                        <div
+                                            class="chart-bar"
+                                            style="height:48%;"
+                                        ></div>
+
+                                        <span>
+                                            Mar
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-bar-item">
+
+                                        <div
+                                            class="chart-bar"
+                                            style="height:58%;"
+                                        ></div>
+
+                                        <span>
+                                            Apr
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-bar-item">
+
+                                        <div
+                                            class="chart-bar"
+                                            style="height:54%;"
+                                        ></div>
+
+                                        <span>
+                                            May
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-bar-item">
+
+                                        <div
+                                            class="chart-bar"
+                                            style="height:72%;"
+                                        ></div>
+
+                                        <span>
+                                            Jun
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-bar-item">
+
+                                        <div
+                                            class="chart-bar"
+                                            style="height:68%;"
+                                        ></div>
+
+                                        <span>
+                                            Jul
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-bar-item">
+
+                                        <div
+                                            class="chart-bar active"
+                                            style="height:86%;"
+                                        ></div>
+
+                                        <span>
+                                            Aug
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         AI INSIGHT
+                    ================================================== -->
+
+                    <div class="dash-card ai-insight-card">
+
+
+                        <div class="ai-insight-top">
+
+                            <span class="ai-insight-icon">
+                                ✦
+                            </span>
+
+                            <span class="ai-insight-badge">
+                                AI INSIGHT
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Your revenue is trending up
+                        </h3>
+
+
+                        <p>
+                            Revenue increased 12.8% this month.
+                            Based on your current invoices, you're
+                            on track to exceed last month's revenue.
+                        </p>
+
+
+                        <div class="ai-insight-metric">
+
+                            <span>
+                                Forecast
+                            </span>
+
+                            <strong>
+                                $96,400
+                            </strong>
+
+                        </div>
+
+
+                        <a
+                            href="ai-assistant.html"
+                            class="ai-insight-link"
+                        >
+                            Ask AI Assistant
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     BOTTOM GRID
+                ================================================== -->
+
+                <div class="dashboard-bottom-grid">
+
+
+                    <!-- =================================================
+                         RECENT INVOICES
+                    ================================================== -->
+
+                    <div class="dash-card dashboard-table-card">
+
+
+                        <div class="dashboard-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Recent invoices
+                                </h3>
+
+                                <p>
+                                    Your latest invoice activity
+                                </p>
+
+                            </div>
+
+
+                            <a
+                                href="invoices.html"
+                                class="dashboard-view-link"
+                            >
+                                View all
+                                →
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="table-wrapper">
+
+                            <table class="invoice-table dashboard-invoice-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>
+                                            Invoice
+                                        </th>
+
+                                        <th>
+                                            Customer
+                                        </th>
+
+                                        <th>
+                                            Amount
+                                        </th>
+
+                                        <th>
+                                            Status
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <strong>
+                                                #INV-1048
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+                                            Acme Corporation
+                                        </td>
+
+                                        <td>
+                                            $2,450.00
+                                        </td>
+
+                                        <td>
+
+                                            <span class="status paid">
+                                                Paid
+                                            </span>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <strong>
+                                                #INV-1047
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+                                            Nova Digital
+                                        </td>
+
+                                        <td>
+                                            $1,820.00
+                                        </td>
+
+                                        <td>
+
+                                            <span class="status pending">
+                                                Pending
+                                            </span>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <strong>
+                                                #INV-1046
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+                                            Bright Labs
+                                        </td>
+
+                                        <td>
+                                            $3,600.00
+                                        </td>
+
+                                        <td>
+
+                                            <span class="status paid">
+                                                Paid
+                                            </span>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+
+                                            <strong>
+                                                #INV-1045
+                                            </strong>
+
+                                        </td>
+
+                                        <td>
+                                            Vertex Studio
+                                        </td>
+
+                                        <td>
+                                            $980.00
+                                        </td>
+
+                                        <td>
+
+                                            <span class="status overdue">
+                                                Overdue
+                                            </span>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         EXPENSE SUMMARY
+                    ================================================== -->
+
+                    <div class="dash-card expense-summary-card">
+
+
+                        <div class="dashboard-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Expense summary
+                                </h3>
+
+                                <p>
+                                    This month's spending
+                                </p>
+
+                            </div>
+
+
+                            <a
+                                href="expenses.html"
+                                class="dashboard-view-link"
+                            >
+                                View
+                                →
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="expense-total">
+
+                            <strong>
+                                $4,820
+                            </strong>
+
+                            <span>
+                                24 transactions
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="expense-progress">
+
+
+                            <div class="expense-progress-row">
+
+                                <div>
+
+                                    <span>
+                                        Software
+                                    </span>
+
+                                    <strong>
+                                        $1,640
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-track">
+
+                                    <span
+                                        style="width:72%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="expense-progress-row">
+
+                                <div>
+
+                                    <span>
+                                        Marketing
+                                    </span>
+
+                                    <strong>
+                                        $1,420
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-track">
+
+                                    <span
+                                        style="width:61%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="expense-progress-row">
+
+                                <div>
+
+                                    <span>
+                                        Travel
+                                    </span>
+
+                                    <strong>
+                                        $980
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-track">
+
+                                    <span
+                                        style="width:43%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="expense-progress-row">
+
+                                <div>
+
+                                    <span>
+                                        Office
+                                    </span>
+
+                                    <strong>
+                                        $780
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-track">
+
+                                    <span
+                                        style="width:34%;"
+                                    ></span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     QUICK ACTION CARDS
+                ================================================== -->
+
+                <div class="dashboard-action-grid">
+
+
+                    <a
+                        href="invoices.html"
+                        class="dashboard-action-card"
+                    >
+
+                        <span class="dashboard-action-icon">
+                            +
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Create invoice
+                            </strong>
+
+                            <span>
+                                Send a professional invoice
+                            </span>
+
+                        </div>
+
+                        <b>
+                            →
+                        </b>
+
+                    </a>
+
+
+
+                    <a
+                        href="customers.html"
+                        class="dashboard-action-card"
+                    >
+
+                        <span class="dashboard-action-icon">
+                            ◎
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Add customer
+                            </strong>
+
+                            <span>
+                                Create a new customer profile
+                            </span>
+
+                        </div>
+
+                        <b>
+                            →
+                        </b>
+
+                    </a>
+
+
+
+                    <a
+                        href="ai-assistant.html"
+                        class="dashboard-action-card"
+                    >
+
+                        <span class="dashboard-action-icon">
+                            ✦
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Ask AI
+                            </strong>
+
+                            <span>
+                                Get help with your business
+                            </span>
+
+                        </div>
+
+                        <b>
+                            →
+                        </b>
+
+                    </a>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="js/main.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+
+</body>
+
+</html>
