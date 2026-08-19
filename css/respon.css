@@ -88,7 +88,7 @@
     }
 
     .landing-hero-text {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .landing-hero-actions {
@@ -184,7 +184,7 @@
     }
 
     .landing-section-heading p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
@@ -303,11 +303,11 @@
     }
 
     .landing-hero-badge {
-        font-size: 9px;
+        font-size: 13px;
     }
 
     .landing-hero-text {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .preview-content {
@@ -315,15 +315,15 @@
     }
 
     .preview-stat-card span {
-        font-size: 7px;
-    }
-
-    .preview-stat-card strong {
         font-size: 12px;
     }
 
+    .preview-stat-card strong {
+        font-size: 14px;
+    }
+
     .preview-stat-card small {
-        font-size: 6px;
+        font-size: 11px;
     }
 
     .landing-footer-links {
@@ -517,7 +517,7 @@
     .header-title p {
         max-width: 190px;
 
-        font-size: 9px;
+        font-size: 13px;
 
         line-height: 1.5;
     }
@@ -578,7 +578,7 @@
 
 
     .dashboard-eyebrow {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -623,7 +623,7 @@
 
 
     .stat-name {
-        font-size: 8px;
+        font-size: 13px;
     }
 
 
@@ -631,7 +631,7 @@
         width: 24px;
         height: 24px;
 
-        font-size: 10px;
+        font-size: 14px;
     }
 
 
@@ -643,7 +643,7 @@
     .stat-change {
         margin-top: 5px;
 
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -668,12 +668,12 @@
 
 
     .dashboard-card-header h3 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
     .dashboard-card-header p {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -682,7 +682,7 @@
 
         max-width: 105px;
 
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -701,7 +701,7 @@
 
 
     .revenue-summary span {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -713,7 +713,7 @@
     .chart-y-axis {
         width: 34px;
 
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -728,7 +728,7 @@
 
 
     .chart-bar-item > span {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -749,7 +749,7 @@
 
 
     .ai-insight-card p {
-        font-size: 8px;
+        font-size: 13px;
 
         line-height: 1.7;
     }
@@ -799,26 +799,26 @@
     .invoice-table th {
         padding: 8px 7px;
 
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
     .invoice-table td {
         padding: 10px 7px;
 
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .invoice-table td strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .status {
         padding: 3px 6px;
 
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -866,17 +866,17 @@
         width: 32px;
         height: 32px;
 
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
     .dashboard-action-card strong {
-        font-size: 9px;
+        font-size: 13px;
     }
 
 
     .dashboard-action-card div span {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 }
@@ -925,7 +925,7 @@
 
 
     .stat-change {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -945,12 +945,12 @@
 
 
     .dashboard-card-header h3 {
-        font-size: 11px;
+        font-size: 14px;
     }
 
 
     .dashboard-card-header p {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -959,7 +959,7 @@
 
         padding: 0 5px;
 
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -989,7 +989,7 @@
 
 
     .ai-insight-card p {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -1074,7 +1074,7 @@
     }
 
     .invoice-page-heading p {
-        font-size: 8px;
+        font-size: 13px;
     }
 
     .invoice-page-heading .primary-dashboard-btn {
@@ -1086,11 +1086,11 @@
     }
 
     .invoice-table-header h3 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .invoice-table-header p {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     .invoice-controls {
@@ -1226,12 +1226,12 @@
 
 
     .expense-management-card .invoice-table-header h3 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
     .expense-management-card .invoice-table-header p {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -1266,7 +1266,7 @@
     .expense-management-card .invoice-search input {
         min-width: 0;
 
-        font-size: 8px;
+        font-size: 13px;
     }
 
 
@@ -1302,26 +1302,26 @@
     .expense-management-card .all-expense-table th {
         padding: 10px 9px;
 
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
     .expense-management-card .all-expense-table td {
         padding: 12px 9px;
 
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .expense-management-card .all-expense-table td strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .expense-management-card .status {
         padding: 4px 6px;
 
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -1335,12 +1335,12 @@
 
 
     #expenseEmptyState h3 {
-        font-size: 13px;
+        font-size: 15px;
     }
 
 
     #expenseEmptyState p {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 }
@@ -1363,7 +1363,7 @@
 
 
     .expense-stats-grid .stat-name {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -1373,7 +1373,7 @@
 
 
     .expense-stats-grid .stat-change {
-        font-size: 6px;
+        font-size: 11px;
 
         line-height: 1.4;
     }
@@ -1385,12 +1385,12 @@
 
 
     .expense-management-card .invoice-table-header h3 {
-        font-size: 11px;
+        font-size: 14px;
     }
 
 
     .expense-management-card .invoice-table-header p {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -1419,7 +1419,7 @@
         width: 26px;
         height: 26px;
 
-        font-size: 13px;
+        font-size: 15px;
     }
 
 }
@@ -1522,12 +1522,12 @@
 
 
     .customer-management-card .invoice-table-header h3 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
     .customer-management-card .invoice-table-header p {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -1583,18 +1583,18 @@
 
     .customer-table th {
         padding: 10px 9px;
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
     .customer-table td {
         padding: 11px 9px;
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .customer-table .customer-name-cell strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -1604,7 +1604,7 @@
         width: 28px;
         height: 28px;
 
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -1613,7 +1613,7 @@
     .customer-management-card .status {
         padding: 4px 6px;
 
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -1627,12 +1627,12 @@
 
 
     #customerEmptyState h3 {
-        font-size: 13px;
+        font-size: 15px;
     }
 
 
     #customerEmptyState p {
-        font-size: 7px;
+        font-size: 12px;
     }
 }
 
@@ -1654,7 +1654,7 @@
 
 
     .customer-stats-grid .stat-name {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -1664,7 +1664,7 @@
 
 
     .customer-stats-grid .stat-change {
-        font-size: 6px;
+        font-size: 11px;
 
         line-height: 1.4;
     }
@@ -1676,12 +1676,12 @@
 
 
     .customer-management-card .invoice-table-header h3 {
-        font-size: 11px;
+        font-size: 14px;
     }
 
 
     .customer-management-card .invoice-table-header p {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -1710,7 +1710,7 @@
         width: 26px;
         height: 26px;
 
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
@@ -1831,7 +1831,7 @@
 
 
     .analytics-stats-grid .stat-name {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -1841,7 +1841,7 @@
 
 
     .analytics-stats-grid .stat-change {
-        font-size: 6px;
+        font-size: 11px;
 
         line-height: 1.4;
     }
@@ -1875,17 +1875,17 @@
 
 
     .analytics-card-header h3 {
-        font-size: 11px;
+        font-size: 14px;
     }
 
 
     .analytics-card-header p {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
     .analytics-chart-value {
-        font-size: 13px;
+        font-size: 15px;
     }
 
 
@@ -1899,7 +1899,7 @@
 
         padding-right: 6px;
 
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
@@ -1909,7 +1909,7 @@
 
 
     .chart-x-axis {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
@@ -1918,9 +1918,8 @@
     }
 
 
-    /* SVG point size is controlled by the circle r attribute in HTML. */
     .chart-point {
-        stroke-width: 2;
+        r: 4;
     }
 
 
@@ -1958,7 +1957,7 @@
 
 
     .expense-donut-center span {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -1968,12 +1967,12 @@
 
 
     .expense-legend > div {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
     .expense-legend strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -2019,7 +2018,7 @@
 
 
     .mini-chart-labels {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
@@ -2033,17 +2032,17 @@
 
 
     .top-customer-item div strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .top-customer-item div small {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
     .top-customer-item > strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -2060,19 +2059,19 @@
 
 
     .analytics-ai-card h3 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
     .analytics-ai-card p {
-        font-size: 7px;
+        font-size: 12px;
 
         line-height: 1.6;
     }
 
 
     .analytics-ai-card a {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 }
@@ -2095,7 +2094,7 @@
 
 
     .analytics-stats-grid .stat-name {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -2105,7 +2104,7 @@
 
 
     .analytics-stats-grid .stat-change {
-        font-size: 5.5px;
+        font-size: 11px;
     }
 
 
@@ -2117,17 +2116,17 @@
 
 
     .analytics-card-header h3 {
-        font-size: 10px;
+        font-size: 14px;
     }
 
 
     .analytics-card-header p {
-        font-size: 5.5px;
+        font-size: 11px;
     }
 
 
     .analytics-chart-value {
-        font-size: 11px;
+        font-size: 14px;
     }
 
 
@@ -2144,12 +2143,12 @@
     .chart-y-axis {
         width: 27px;
 
-        font-size: 4.5px;
+        font-size: 10px;
     }
 
 
     .chart-x-axis {
-        font-size: 4.5px;
+        font-size: 10px;
     }
 
 
@@ -2166,12 +2165,12 @@
 
 
     .expense-donut-center strong {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
     .expense-donut-center span {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
@@ -2186,12 +2185,12 @@
 
 
     .analytics-ai-card h3 {
-        font-size: 11px;
+        font-size: 14px;
     }
 
 
     .analytics-ai-card p {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 }
@@ -2314,7 +2313,7 @@
 
 
     .ai-page-badge {
-        font-size: 5px;
+        font-size: 10px;
 
         padding: 4px 7px;
     }
@@ -2328,7 +2327,7 @@
 
 
     .ai-page-heading p {
-        font-size: 7px;
+        font-size: 12px;
 
         line-height: 1.6;
     }
@@ -2367,24 +2366,24 @@
 
         border-radius: 8px;
 
-        font-size: 13px;
+        font-size: 15px;
     }
 
 
     .ai-agent-info strong {
-        font-size: 8px;
+        font-size: 13px;
     }
 
 
     .ai-agent-info span {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
     .ai-new-chat-btn {
         padding: 6px 8px;
 
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -2410,12 +2409,12 @@
 
         border-radius: 7px;
 
-        font-size: 10px;
+        font-size: 14px;
     }
 
 
     .ai-message-name {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
@@ -2425,7 +2424,7 @@
 
 
     .ai-message-bubble p {
-        font-size: 7px;
+        font-size: 12px;
 
         line-height: 1.65;
     }
@@ -2452,7 +2451,7 @@
     .ai-prompt-btn {
         padding: 7px 8px;
 
-        font-size: 5.5px;
+        font-size: 11px;
 
         border-radius: 7px;
     }
@@ -2475,7 +2474,7 @@
 
 
     .ai-chat-input-wrapper input {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -2485,12 +2484,12 @@
 
         border-radius: 7px;
 
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
     .ai-input-hint {
-        font-size: 5px;
+        font-size: 10px;
 
         line-height: 1.4;
     }
@@ -2521,12 +2520,12 @@
 
 
     .ai-side-heading h3 {
-        font-size: 9px;
+        font-size: 13px;
     }
 
 
     .ai-side-heading p {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
@@ -2536,12 +2535,12 @@
 
 
     .ai-snapshot-item span {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
     .ai-snapshot-item strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
@@ -2560,22 +2559,22 @@
 
         border-radius: 7px;
 
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .ai-suggestion-item strong {
-        font-size: 6.5px;
+        font-size: 12px;
     }
 
 
     .ai-suggestion-item small {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
     .ai-suggestion-item > span:last-child {
-        font-size: 8px;
+        font-size: 13px;
     }
 
 
@@ -2590,17 +2589,17 @@
         width: 25px;
         height: 25px;
 
-        font-size: 9px;
+        font-size: 13px;
     }
 
 
     .ai-status-card strong {
-        font-size: 6.5px;
+        font-size: 12px;
     }
 
 
     .ai-status-card p {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 }
@@ -2618,7 +2617,7 @@
 
 
     .ai-page-heading p {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
@@ -2636,24 +2635,24 @@
         width: 27px;
         height: 27px;
 
-        font-size: 11px;
+        font-size: 14px;
     }
 
 
     .ai-agent-info strong {
-        font-size: 7px;
+        font-size: 12px;
     }
 
 
     .ai-agent-info span {
-        font-size: 4.5px;
+        font-size: 10px;
     }
 
 
     .ai-new-chat-btn {
         padding: 5px 7px;
 
-        font-size: 5.5px;
+        font-size: 11px;
     }
 
 
@@ -2671,7 +2670,7 @@
         width: 22px;
         height: 22px;
 
-        font-size: 9px;
+        font-size: 13px;
     }
 
 
@@ -2681,7 +2680,7 @@
 
 
     .ai-message-bubble p {
-        font-size: 6.5px;
+        font-size: 12px;
 
         line-height: 1.6;
     }
@@ -2697,7 +2696,7 @@
 
         text-align: left;
 
-        font-size: 5.5px;
+        font-size: 11px;
     }
 
 
@@ -2707,7 +2706,7 @@
 
 
     .ai-chat-input-wrapper input {
-        font-size: 6.5px;
+        font-size: 12px;
     }
 
 
@@ -2718,17 +2717,17 @@
 
 
     .ai-input-hint {
-        font-size: 4.5px;
+        font-size: 10px;
     }
 
 
     .ai-snapshot-item span {
-        font-size: 5.5px;
+        font-size: 11px;
     }
 
 
     .ai-snapshot-item strong {
-        font-size: 6.5px;
+        font-size: 12px;
     }
 
 }
@@ -2756,12 +2755,12 @@
 
 
     .ai-message-bubble p {
-        font-size: 6px;
+        font-size: 11px;
     }
 
 
     .ai-prompt-btn {
-        font-size: 5px;
+        font-size: 10px;
     }
 
 
@@ -2783,357 +2782,8 @@
 
 @media (max-width: 700px) {
     .landing-trust-badge {
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         padding: 10px 16px;
-    }
-}
-
-
-/* =========================================================
-   PREMIUM TYPOGRAPHY — RESPONSIVE FIX
-========================================================= */
-
-@media (max-width: 700px) {
-    body { font-size: 15px; }
-
-    .landing-hero-text { font-size: 15px; }
-    .landing-section-heading p { font-size: 14px; }
-    .landing-feature-card p,
-    .landing-step p,
-    .landing-solution-content p,
-    .landing-pricing-info p,
-    .landing-cta-box p { font-size: 14px; }
-
-    .dashboard-header .header-title p,
-    .dashboard-content p,
-    .invoice-page-heading p,
-    .customer-page-heading p,
-    .analytics-page-heading p,
-    .ai-page-heading p { font-size: 13px; }
-
-    .dashboard-nav a { font-size: 14px; }
-    .stat-name { font-size: 12px; }
-    .stat-value { font-size: 24px; }
-    .stat-change { font-size: 11px; }
-
-    .invoice-table th { font-size: 11px; }
-    .invoice-table td { font-size: 12px; }
-
-    .ai-message-bubble p { font-size: 12px; }
-    .ai-prompt-btn { font-size: 11px; }
-}
-
-@media (max-width: 420px) {
-    .landing-hero-text { font-size: 14px; }
-    .landing-section-heading p,
-    .landing-feature-card p,
-    .landing-step p { font-size: 13px; }
-
-    .ai-message-bubble p { font-size: 11.5px; }
-    .dashboard-header .header-title p,
-    .dashboard-content p { font-size: 12px; }
-}
-
-
-/* =========================================================
-   GLOBAL PREMIUM FONT SIZE OVERRIDE
-   Final cascade: fixes undersized typography on every page
-========================================================= */
-
-body,
-button,
-input,
-select,
-textarea {
-    font-size: 16px;
-}
-
-/* General text */
-p, li, td, label, input, select, textarea {
-    font-size: 15px;
-}
-
-/* Dashboard and all management pages */
-.dashboard-main p,
-.dashboard-content p,
-.dash-card p,
-.invoice-table td,
-.customer-table td,
-.analytics-card p,
-.ai-page-heading p,
-.invoice-page-heading p,
-.customer-page-heading p,
-.analytics-page-heading p {
-    font-size: 15px !important;
-}
-
-.dashboard-nav a,
-.dashboard-nav span:not(.nav-icon):not(.ai-label),
-.sidebar-bottom a,
-.invoice-controls input,
-.invoice-filter,
-.primary-dashboard-btn {
-    font-size: 15px !important;
-}
-
-.sidebar-label,
-.workspace-card small {
-    font-size: 11px !important;
-}
-
-.workspace-card strong {
-    font-size: 15px !important;
-}
-
-.stat-name {
-    font-size: 14px !important;
-}
-
-.stat-value {
-    font-size: 28px !important;
-}
-
-.stat-change {
-    font-size: 13px !important;
-}
-
-.invoice-table th,
-.customer-table th,
-.analytics-table th {
-    font-size: 13px !important;
-}
-
-.invoice-table td,
-.customer-table td,
-.analytics-table td {
-    font-size: 14px !important;
-}
-
-.status,
-.badge {
-    font-size: 12px !important;
-}
-
-/* Headings */
-h1 {
-    font-size: clamp(30px, 4vw, 42px) !important;
-}
-
-.dashboard-content h2,
-.invoice-page-heading h2,
-.customer-page-heading h2,
-.analytics-page-heading h2,
-.ai-page-heading h2 {
-    font-size: clamp(26px, 3vw, 34px) !important;
-}
-
-.dash-card h3,
-.invoice-table-header h3,
-.customer-table-header h3,
-.analytics-card h3,
-.ai-side-heading h3 {
-    font-size: 19px !important;
-}
-
-/* Landing page */
-.landing-navigation a,
-.landing-login-btn,
-.landing-start-btn,
-.landing-primary-btn,
-.landing-outline-btn {
-    font-size: 15px !important;
-}
-
-.landing-hero-text {
-    font-size: 18px !important;
-}
-
-.landing-trust {
-    font-size: 14px !important;
-}
-
-.landing-section-heading p,
-.landing-feature-card p,
-.landing-step p,
-.landing-solution-content p,
-.landing-pricing-info p,
-.landing-cta-box p,
-.landing-footer-brand p {
-    font-size: 16px !important;
-}
-
-.landing-feature-card h3,
-.landing-step h3 {
-    font-size: 21px !important;
-}
-
-.landing-feature-card a,
-.landing-footer-links a,
-.landing-footer-bottom {
-    font-size: 14px !important;
-}
-
-/* AI Assistant */
-.ai-agent-info strong {
-    font-size: 15px !important;
-}
-
-.ai-agent-info span,
-.ai-message-name {
-    font-size: 12px !important;
-}
-
-.ai-message-bubble p {
-    font-size: 15px !important;
-    line-height: 1.7 !important;
-}
-
-.ai-prompt-btn {
-    font-size: 13px !important;
-}
-
-.ai-snapshot-item span,
-.ai-suggestion-item small,
-.ai-status-card p {
-    font-size: 13px !important;
-}
-
-.ai-snapshot-item strong,
-.ai-suggestion-item strong,
-.ai-status-card strong {
-    font-size: 14px !important;
-}
-
-/* Mobile: readable, without oversized layout */
-@media (max-width: 700px) {
-    body,
-    button,
-    input,
-    select,
-    textarea {
-        font-size: 15px !important;
-    }
-
-    p, li, td, label {
-        font-size: 14px !important;
-    }
-
-    .landing-hero-text {
-        font-size: 16px !important;
-    }
-
-    .landing-section-heading p,
-    .landing-feature-card p,
-    .landing-step p,
-    .landing-solution-content p,
-    .landing-pricing-info p,
-    .landing-cta-box p {
-        font-size: 14px !important;
-    }
-
-    .dashboard-main p,
-    .dashboard-content p,
-    .invoice-page-heading p,
-    .customer-page-heading p,
-    .analytics-page-heading p,
-    .ai-page-heading p {
-        font-size: 14px !important;
-    }
-
-    .dashboard-nav a {
-        font-size: 14px !important;
-    }
-
-    .stat-value {
-        font-size: 25px !important;
-    }
-
-    .invoice-table th,
-    .customer-table th {
-        font-size: 12px !important;
-    }
-
-    .invoice-table td,
-    .customer-table td {
-        font-size: 13px !important;
-    }
-
-    .ai-message-bubble p {
-        font-size: 14px !important;
-    }
-}
-
-@media (max-width: 420px) {
-    .landing-hero-text {
-        font-size: 15px !important;
-    }
-
-    .landing-section-heading p,
-    .landing-feature-card p,
-    .landing-step p {
-        font-size: 13px !important;
-    }
-
-    .ai-message-bubble p {
-        font-size: 13px !important;
-    }
-
-    .stat-value {
-        font-size: 23px !important;
-    }
-}
-
-
-/* =========================================================
-   MOBILE LANDING NAVBAR — FINAL FIX
-========================================================= */
-@media (max-width: 700px) {
-    .landing-nav {
-        position: relative;
-    }
-
-    .landing-navigation.mobile-open,
-    .landing-navigation.mobile-active {
-        display: flex !important;
-        position: absolute;
-        top: 62px;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        margin: 0;
-        padding: 10px;
-        border: 1px solid var(--landing-border);
-        border-radius: 12px;
-        background: #ffffff;
-        box-shadow: 0 15px 35px rgba(31, 37, 56, 0.15);
-    }
-
-    .landing-navigation.mobile-open a,
-    .landing-navigation.mobile-active a {
-        display: block;
-        padding: 13px 14px;
-        border-radius: 8px;
-    }
-
-    .landing-navigation.mobile-open a:hover,
-    .landing-navigation.mobile-active a:hover {
-        background: #f5f4ff;
-    }
-
-    .landing-nav-actions.mobile-open {
-        display: flex !important;
-        position: absolute;
-        top: 310px;
-        left: 10px;
-        right: 10px;
-        z-index: 9998;
-        padding: 10px;
-        border: 1px solid var(--landing-border);
-        border-radius: 12px;
-        background: #ffffff;
     }
 }
